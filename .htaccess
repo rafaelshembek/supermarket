@@ -1,0 +1,20 @@
+RewriteEngine On
+# ============ LOJA ================
+RewriteRule ^interface/loja/([0-9]+) interface/loja.php?refLoja=$1
+RewriteRule ^interface/loja?$ interface/loja.php
+RewriteRule ^interface/loja/?$ interface/loja.php
+# ============ CARRINHO DE COMPRA =======================
+RewriteRule ^interface/carrinho/([0-9]+) interface/carrinho.php?refLoja=$1
+RewriteRule ^logica/del/([0-9]+)/([0-9]+) logica/delete_produto_carrinho.php?refLoja=$1&del=$2
+RewriteRule ^interface/carrinho/?$ interface/carrinho.php
+RewriteRule ^interface/carrinho?$ interface/carrinho.php
+
+# ============ ADD PRODUTO ==================
+RewriteRule ^interface/add_produto/([0-9]+) interface/add_produto.php?refLoja=$1
+RewriteRule ^interface/add_produto/?$ interface/add_produto.php
+RewriteRule ^interface/add_produto?$ interface/add_produto.php
+# ===========================================
+RewriteRule ^interface/painel/?$ interface/painel.php
+RewriteRule ^interface/signup?$ interface/signup.php
+RewriteRule ^interface/esqueceu_senha?$ interface/esqueceu_senha.php
+RewriteRule ^logica/logout?$ logica/logout.php
