@@ -1,0 +1,30 @@
+{
+  "name": "mercadofacil",
+  "version": "1.0.0",
+  "description": "meu mercado facil seu mercado mais proximo de voce",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "angular": "^1.7.2",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "angular-route": "^1.7.5",
+    "angular-material": "^1.1.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelshembek/supermarket.git"
+  },
+  "author": "antonio rafael da silva gomes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelshembek/supermarket/issues"
+  },
+  "homepage": "https://github.com/rafaelshembek/supermarket#readme"
+}
