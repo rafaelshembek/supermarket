@@ -113,15 +113,12 @@
             <?php elseif($type_loja->getTipo_conta() == 'empresa'): ?>
         <!-- ======== BARRA INFORMAÇÕES SOBRE A COMPRA DO CLIENTE ====== -->
             <nav class="ui stackable attached segment secondary border-0 menu">
-                <div class="item justify-content-center">
-                    <div class="font-weight-light text-muted">Carrinho de compras</div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="item justify-content-center">
-                            <img src="../../img/logo_oficial/logo-small-top-page-cadastro.png" alt="logo marca super.market">
-                        </div>
+                <div class="left menu">
+                    <div class="item">
+                        <div class="h3 font-weight-bold text-muted">Carrinho de Compras</div>
                     </div>
+                </div>
+                <div class="right menu">
                     <?php
                     if(isset($_SESSION['id_user'])){
                         $id = $_SESSION['id_user'];
@@ -134,32 +131,25 @@
                         }
                     }
                     ?>
-                    <div class="col-sm">
-                        <div class="item justify-content-center text-muted">
-                            Total de items 
-                            <strong class="ui large label">
-                            <?php
-                            // verificar se tem uma session online
-                                $resultado_qty = isset($total) ? $total : 0;
-                                echo $resultado_qty;
-                            ?>
-                            </strong> 
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="item justify-content-center">
-                            Total:
-                            <div class="ui big circular label">
-                            <?php
-                            // verificar se tem uma session online
-                            $resultado = isset($_SESSION['id_user']) ?  $valor_total : 0.00;
-                            echo number_format($resultado, 2, '.', ','); //mostra o valor total de todos os produtos
-                            ?>
-                            </div>
-                        </div>
+                    <div class="item justify-content-center text-muted">
+                        <div class="h4 alert font-weight-bold text-muted">
+                        <?php
+                        // verificar se tem uma session online
+                            $resultado_qty = isset($total) ? $total : 0;
+                            echo $resultado_qty;
+                        ?>
+                        Items 
+                        </div> 
                     </div>
                     <div class="item justify-content-center">
-                        <div class="ui yellow circular shadow-sm icon button">Por que esse total<i class="info icon"></i></div>
+                        <div class="h4 alert font-weight-bold text-muted">
+                        Total:
+                        <?php
+                        // verificar se tem uma session online
+                        $resultado = isset($_SESSION['id_user']) ?  $valor_total : 0.00;
+                        echo 'R$'.number_format($resultado, 2, '.', ','); //mostra o valor total de todos os produtos
+                        ?>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -227,24 +217,30 @@
     $qty = $items['qty'];
     $preco = $items['preco'];
     ?>
-    <div class="row" style="background: #fafafa;">
-        <div class="col-md-3 d-flex text-primary align-content-center">
-            <div class="card-body d-flex justify-content-center align-content-center flex-column">
-                <div class="font-weight-light">Produto</div>
-                <h1 class="font-weight-bold" style="font-size: 15pt;"><strong><?php echo utf8_decode($produto); ?></strong></h1>
+    <div class="row ui items" style="background: #fafafa;">
+        <div class="col-md-3 item">
+            <div class="content d-flex justify-content-center align-content-center flex-column flex-wrap">
+                <div class="header" style="font-size: 15pt;">
+                <i class="cart icon"></i>
+                <strong><?php echo utf8_decode($produto); ?></strong>
+                </div>
+                <div class="meta">
+                    <span class="price">
+                        <strong>Categoria:</strong>
+                        <?php echo $categoria; ?>
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="col-md-3 text-primary">
-            <div class="card-body d-flex justify-content-center align-content-center">
-                <!-- <div class="font-weight-light text-muted">Categoria</div> -->
-                <p class="font-weight-light p-3">Categoria: <strong class="font-weight-bold"><?php echo $categoria; ?></strong></p>
-                <div class="font-weight-light p-3">Descrição: <strong class="font-weight-bold"><?php echo utf8_decode($descricao); ?></strong></div>
+        <div class="col-md-3 item">
+            <div class="content d-flex justify-content-center align-content-center flex-column flex-wrap">
+                <div class="extra p-3"><strong>Descrição:</strong> <?php echo utf8_decode($descricao); ?></div>
             </div>
         </div>
-        <div class="col-sm text-primary">
-            <div class="card-body d-flex justify-content-center align-content-center">
-                <div class="font-weight-light p-3">Qty: <strong class="ui big blue label"><?php echo $qty; ?></strong></div>
-                <div class="font-weight-light p-3">Preço:<strong class="ui big blue label">R$<?php echo number_format($preco, 2, '.', ','); ?></strong></div>
+        <div class="col-sm item">
+            <div class="content">
+                <div class="extra p-3"><strong>Qty:</strong><?php echo $qty; ?></div>
+                <div class="extra p-3"><strong>Preço:</strong> R$<?php echo number_format($preco, 2, '.', ','); ?></div>
             </div>
         </div>
         <div class="col-md-2 d-flex text-primary align-content-center flex-wrap">
@@ -284,6 +280,7 @@
     // //// se tiver dados de moradia ele mostra o button para finalizar o pagamento         
     else:
     ?>
+    <div class="card-body">
         <?php if(isset($_SESSION['id_user'])&& isset($_GET['refLoja'])):?>        
         <form id="form_pagamento" class="ui form" method="post" action="../add_produto/<?php echo $_GET['refLoja']; ?>">
 
@@ -305,11 +302,12 @@
             </div>
         </form>
         <?php endif; ?>
+    </div>
     <?php endif;?>
     <div class="card-body">
         <?php
-            $resultado = isset($_SESSION['id_user']) ? '<i class="cart icon"></i> Fazer mais compras' : '<i class="fas fa-shopping-bag"></i> Voltar para loja';
-            echo '<a class="ui button" href="../loja/'.$_GET['refLoja'].'">'.$resultado.'</a>';
+            $resultado = isset($_SESSION['id_user']) ? '<i class="cart icon"></i> Continuar Comprando' : '<i class="fas fa-shopping-bag"></i> Voltar para loja';
+            echo '<a class="ui button" style="background: transparent;" href="../loja/'.$_GET['refLoja'].'">'.$resultado.'</a>';
         ?>
     </div>
 </div>
@@ -332,16 +330,16 @@
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-6">
                                 <div class="card-body">
-                                    <h3 class="ui massive yellow label text-muted font-weight-light">Você esta offline</h3>
+                                    <h3 class="alert alert-warning font-weight-light">Você esta deslogado da conta</h3>
                                 </div>
                                 <div class="card-body">
                                     <img src="../../img/logo_oficial/login-password.svg" width="100" alt="" srcset="">
-                                    <p class="ui header font-weight-light">Para Comprar entre com seus dados de login</p>
+                                    <p class="ui header text-dark font-weight-light">Para ver as compra no carrinho precisa esta logado com seus dados de login</p>
                                 </div>
                                 <div class="card-body">
-                                    <a class="ui blue inverted button m-1" href="../../">Entra com sua Senha</a>
+                                    <a class="ui red button m-1" href="../../">Entra com sua Senha</a>
                                     <?php $id_direcLoja = isset($_GET['refLoja']) ? '?refLoja='.$_GET['refLoja'] : ''; ?>
-                                    <a class="ui red inverted button" href="../loja/<?php echo $_GET['refLoja']; ?>"><i class="fas fa-shopping-bag"></i> voltar para a loja</a>
+                                    <a class="ui button" style="background: transparent;" href="../loja/<?php echo $_GET['refLoja']; ?>"><i class="fas fa-shopping-bag"></i> voltar para a loja</a>
                                 </div>
                             </div>
                         </div>

@@ -54,8 +54,13 @@
                     }
         
         }else if(!isset($_SESSION['id_user']) && !isset($_GET['refLoja']) || isset($_GET['refLoja'])){
-            echo '<div class="ui attached stackable secondary small menu border-0"style="background: #57a60a;">';
-            echo '<a class="nav-link text-white" href="../../">inicio</a>';
+            echo '<div class="ui attached secondary stackable small menu shadow border-0"style="background: #4AC767;">';
+            echo '<div class="card-body text-center"><img src="../../img/logo_oficial/logo-super-market-2.png" width="100em"></div>';
+            echo '<div class="right menu">';
+                echo '<div class="item justify-content-center">';
+                    echo '<a class="nav-link text-white" href="../../">inicio</a>';
+                echo '</div>';
+            echo '</div>';
             echo '</div>';
         }
         ?>
