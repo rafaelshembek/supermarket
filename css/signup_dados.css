@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #08b8cd;
+}
+.result_signup{
+    margin:  5em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 400px;
+    box-shadow: 0px 0px 1px -1px #333;
+}
+.usuario{
+    margin:  5em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 1px -1px #333;
+}
+.box_result{
+    width: 90%;
+    margin: 12px 0px;
+    padding: 5px 1em;
+    background-color: #f1f1f1;
+}
+.box_result h1, h2{
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #666;
+}
+.box_result p{
+    color: #777;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box_info_result{
+    margin: 0 1em;
+    padding: 12px 1em;
+}
+.box_info_result span{
+    color: #08b8cd;
+    font-size: 9pt;
+    font-family: sans-serif;
+}
+
+.info_sucesso{
+    border-radius: 5px;
+    margin: 12px 0px;
+    padding: 5px 1em;
+    background-color: #0fcd08;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+}
+/* body */
+.body{
+    height: 500px;
+}
+/*signup_dados.php style mensagem de arro*/
+.info_aviso{
+    margin-top: 3em;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.info_aviso i{
+    font-size: 50pt;
+    margin: 5px;
+    color: #c00;
+}
+.info_aviso h1{
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #c00;
+}
+a.btn-voltar-erro{
+    background: rgb(231, 67, 67);
+    color: #fff !important;
+    padding: 12px 5em;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px -5px #c00;
+}
+/* animação rotação para voltar ao inicio */
+.reload_icon i{
+    color: #fff;
+    font-size: 3em;
+    -webkit-animation: reloading 2s linear infinite;
+    -moz-animation: reloading 2s linear infinite;
+    -o-animation: reloading 2s linear infinite;
+    animation: reloading 2s linear infinite;
+}
+@-webkit-keyframes reloading{
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* animação da img erro de campos */
+#img-error-form{
+    opacity: 0;
+    -webkit-animation: form_zoo 3s linear infinite;
+    -moz-animation: form_zoo 3s linear infinite;
+    -o-animation: form_zoo 3s linear infinite;
+    animation: form_zoo 3s linear infinite;
+}
+@-webkit-keyframes form_zoo{
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}

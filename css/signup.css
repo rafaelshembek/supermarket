@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#form_check{
+    margin: auto;
+}
+#form_check form{
+    margin: 1em auto;
+}
+.d{
+    visibility: hidden;
+}
+.box_check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box_check h1{
+    font-family: sans-serif;
+    color: #999999;
+    font-size: 12pt;
+    padding: 5px 1em;
+}
+.check_empresa, .check_usuario{
+    width: 150px;
+    padding: 5px 1em;
+}
+.radioConteiner{
+    border-radius: 30px;
+    padding: 5px 1em;
+    background-color: #0b48f1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'verdana', sans-serif;
+    user-select: none;
+}
+.radioConteiner input{
+    display: none;
+}
+.info_signup{
+    padding: 5px;
+    width: 70%;
+}
+.info_signup h2{
+    color: #777;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12pt;
+}
+/*style dos modals*/
+.modal_empresa{
+    display: none;
+    width: 70%;
+}
+.modal_empresa p{
+    text-align: center;
+    font-size: 9pt;
+    font-family: sans-serif;
+}
+.modal_usuario{
+    display: none;
+    width: 70%;
+}
+.modal_usuario p{
+    text-align: center;
+    font-size: 9pt;
+    font-family: sans-serif;
+}
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.divs_input_empresa{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 500px;
+}
+.divs_input_empresa label{
+    font-family: sans-serif;
+    margin: 5px 0;
+    padding: 5px 1em;
+}
+.divs_input_empresa input{
+    padding-left: 1em;
+    font-size: 12pt;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+}
+.btn_cadastrar{
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btn_cadastrar input{
+    border-radius: 30px;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: #0b48f1;
+    color: #fff;
+    margin-right: 15%;
+}
+.backgroundSide{
+    background-image: url('../img/logo_oficial/mulherCompras.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: #0eced4;
+}
+.button-cadastrar{
+    background: #f50440 !important; 
+    border-radius: 30px !important;
+    color: #fff !important;
+    box-shadow: 0px 7px 12px -4px #b40833 !important;
+}

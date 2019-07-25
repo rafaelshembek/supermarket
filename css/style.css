@@ -1,0 +1,19 @@
+@import url('nav_top.css');
+@import url('body.css');
+@import url('loja.css');
+@import url('layout_carrinho.css');
+@import url('background-login.css');
+@import url('footer.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+.barra_admini{
+    background: #09b927 !important;
+}
+.rodaper-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

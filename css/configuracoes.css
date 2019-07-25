@@ -1,0 +1,112 @@
+/* nav top */
+#backgorundConfiguracoes{
+    background: #4AC767;
+}
+.nav-top{
+    width: 100%;
+}
+.icon_menu span i{
+    color: #098eaf;
+}
+/* alter a cor quando clickar em ativar a contar */
+.btn_green{
+    background: #0a9042 !important;
+    color: #fff !important;
+}
+/* config aside avatar */
+.small-email-avatar small{
+    color: #666;
+    padding: 3px 1em;
+    border-radius: 30px;
+}
+/* center configurações */
+.center-title h4{
+    font-size: 13pt;
+}
+.info-confi{
+    margin: auto;
+    width: 600px;
+}
+.info-confi p{
+    font-size: 9pt;
+}
+/* input #file */
+#file{
+    padding: 5px;
+    background-color: #13bd6d;
+    color: #fff;
+}
+.bg-green-oficial{
+    background-color: #0a9042;
+}
+.input_trocar_login{
+    outline: none;
+    border: none;
+    height: 40px;
+    padding-left: 1em;
+    color: #fff;
+    background-color: #0b8ad3;
+}
+.btn-login{
+    border:none;
+    font-size: 9pt;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* box do avatar */
+.box-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* content do centro */
+.body_configuracoes{
+    display: flex;
+}
+/* content left */
+.aside-left{
+    background-color: #0e5aa1;
+}
+.container_center{
+    width: 65vw;
+}
+/* formulario trocar de informações */
+
+/* btnCloseInput input trocar nome da loja */
+.btnCloseInput{
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    left: -1em;
+    top: 2em;
+    position: absolute;
+    z-index: 50;
+    box-shadow: 0px 7px 12px -7px #333;
+}
+/* body-configuracoes */
+#input_alter_username{
+    margin-top: -5%;
+}
+.body-configuracoes{
+    background-color: #0e5aa1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-salvar-atualizar button{
+    background-color: #fff;
+    border-radius: 30px;
+    color: #098eaf;
+    border: 1px solid #098eaf;
+}
+/* background colores */
+.bg_aside{
+    background-color: #ffffff;
+}
+.bg-green-dark{
+    background-color: #0a9042;
+}

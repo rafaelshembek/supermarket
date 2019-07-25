@@ -1,0 +1,101 @@
+.nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #0dc789;
+}
+.nav-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.nav-menu p{
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-menu form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bg-green-radius{
+    background-color: #0d73e9;
+    border-radius:3px;
+}
+.infor_sessions_user{
+    background-color: #0dc789;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 55px;
+}
+.infor_sessions_user li{
+    list-style: none;
+    margin: 4px 1em;
+}
+.barra_top_menu_loja p{
+    margin: 7px 1em;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+.barra_top_menu_loja a{
+    color: #fff;
+    text-decoration: none;
+}
+.infor_sessions_user li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-menu ul li button{
+    margin: 5px;
+    border: none;
+    background-color: #ffffff;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    color: #ccc;
+    outline: none;
+    cursor: pointer;
+}
+.label_form{
+    color: #fff;
+    margin-left: 1em;
+    font-size: 9pt;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.input_login{
+    font-family: 'Varela Round', sans-serif;
+    background-color: #fff;
+    font-size: 12pt;
+    border-radius: 30px;
+    border: none;
+    padding-left: 1em;
+    outline: none; 
+    margin: 5px 0;
+    width: 250px;
+    height: 35px;
+}
+.btn_login{
+    margin: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+}
+.btn_login button{
+    border-radius: 30px;
+    background-color: #0ce7b8;
+    box-shadow: 0px 4px 12px -5px #333;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 12px 3em;
+    cursor: pointer;
+}

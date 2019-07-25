@@ -1,0 +1,53 @@
+.info_body_2{
+    /* background-image: url('../img/logo_oficial/pexels-photo-920382.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply; */
+    background-color: #0f98ce81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-saudacao{
+    font-size: 17pt;
+}
+.icon_basket i{
+    background: #19b85e;
+    color: #ffffff;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+}
+.produtos_vitrini{
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+}
+.card_produtos{
+    border-radius: 10px;
+    width: 200px;
+}
+.preco{
+    position: absolute;
+    padding: 10px;
+    border-radius: 3px;
+    background: #e91822;
+    color: #fff;
+    margin-top: -10em;
+    margin-left: 10em;
+}
+.preco .cifrao{
+    text-align: center;
+    background: #fff;
+    color: rgb(161, 155, 155);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -2em;
+    margin-left: -2em;
+}

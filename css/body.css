@@ -1,0 +1,123 @@
+#result_search{
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+.pesquisar span{
+    width: 90%;
+    text-align: center;
+    margin: 5px;
+    padding: 3px;
+    color: #4c7ce2;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pesquisar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.pesquisar h1{
+    margin: 5px;
+    padding: 5px 1em;
+    font-size: 20pt;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pesquisar a{
+    color: #a1a1a1;
+    text-decoration: none;
+}
+.link_pesquisar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 12px;
+}
+.link_pesquisar a i{
+    font-size: 10pt;
+}
+.link_pesquisar a{
+    text-decoration: none;
+    color: #4c7ce2;
+    font-family: 'Roboto', sans-serif;
+}
+.box_search{
+    background-image: url('../img/logo_oficial/pexels-photo-811108.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: #3a3a3ab9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+}
+#search{
+    background: #f1f1f1;
+    color: #4c7ce2;
+    font-family: 'Roboto', sans-serif;
+}
+::-webkit-input-placeholder{
+    color: #0fb676;
+    font-family: 'Roboto', sans-serif;
+}
+.empresas-destaque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.destaque_title{
+    width: 79%;
+    padding: 12px;
+}
+.destaque_title h2{
+    background-color: #fff;
+    padding: 12px 1em;
+    border-radius: 30px;
+    font-family: 'Varela Round', sans-serif;
+    color: #747474;
+    font-size: 12pt;
+}
+.destaque_title h2 i{
+    font-size: 20pt;
+}
+.supermecados_destaques{
+    width: 80%;
+}
+.super{
+    margin: 12px;
+    height: 200px;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+h1.icon_body{
+    background: #fbfbfb;
+    border-radius: 50%;
+    border: 5px solid #f1f1f1;
+    color: #91E855;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100px;
+}
+div.box_divs_body{
+    margin: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

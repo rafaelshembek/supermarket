@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.space{
+    margin: 12px;
+}
+.box_bg{
+    background-color: #0ea5b9;
+}
+.bg_green{
+    background-color: #42cf78;
+}
+.bg_blue{
+    background-color: #0ea5b9;
+}
+.status_pagamento{
+    background-color: #ffffff;
+    color: rgb(218, 39, 39);
+    padding: 12px 1em;
+    width: 100px;
+    border-radius: 30px;
+
+}

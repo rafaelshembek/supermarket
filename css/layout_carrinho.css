@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*barra_info_user*/
+.barra_info_user{
+    box-shadow: 0px 5px 12px -9px #333;
+    background-color: #fff;
+}
+.pagar{
+    visibility: hidden;
+}
+.barra_info_user li{
+    list-style: none;
+    display: inline-block;
+}
+.barra_info_user li a{
+    text-decoration: none;
+    color: rgb(18, 161, 218);
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 1em;
+}
+.barra_info_user li p{
+    margin: 5px 0;
+    color: #fff;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.barra_info_user li i{
+    margin: 10px 1em;
+    color: #fff;
+}
+.icon-img-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-img-avatar h1{
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    border-radius: 30px;
+    color: #0cb862;
+}
+.icon-img-avatar i{
+    background-color: #f1f1f1;
+    color: #aaa;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 12px;
+}
+/*body do carrinho*/
+.body_carrinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.title_carrinho{
+    margin: 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_carrinho h1, .title_valor_total, .title_quantidade, .title_loja{
+    font-size: 12pt;
+    color: #23b679;
+}
+.box_up .count_total_produto p{
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 9pt;
+}
+.box_up .count_total_produto p strong{
+    font-size: 15pt;
+    color: #3d3d3d;
+}
+.box_up .count_total_produto p i{
+    color: #3d3d3d;
+    font-size: 15pt;
+}
+/* box left */
+.box_left{
+    width:75%;
+}
+.box-produto{
+    display: flex;
+    margin:5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.list_produto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 12px;
+}
+.list_box_produto{
+    padding: 5px 12px;
+}
+.categoria_produto{
+    box-shadow: 0px 0px 5px -1px #333;
+    border-radius:30px;
+    background-color: #fff;
+}
+.img_icon img{
+    border-radius: 50%;
+    width:55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img_icon i{
+    font-size: 20pt;
+    color: #fff;
+}
+/* box_right */
+.box_right{
+    width: 25vw;
+    height: 70vh;
+}
+/* style da dabela */
+th.img_icon i{
+    margin-left: 1em;
+    color: #999;
+    font-size: 21pt;
+}
+.box-space{
+    margin: 4px;
+}
+.btn-submit{
+    border:1px solid #333;
+    width: 50%;
+}
+/* MODAL SHOW CADATRAR DADOS DE MORADIA */
+.modalCarrinho.ui.fullscreen.modal{
+    z-index: 555;
+}

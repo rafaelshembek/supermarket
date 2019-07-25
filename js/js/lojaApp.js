@@ -1,0 +1,1 @@
+var loja = angular.module('lojaApp', []);

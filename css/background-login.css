@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+#modalLoginNav{
+	top: 4em;
+	z-index: 200;
+	width: 300px;
+	position: absolute;
+	background: #4AC767;
+	border-radius: 5px;
+	/* box-shadow: 0px 0px 12px -7px #333; */
+	/* visibility: hidden; */
+	display: none;
+}
+#btn-loginIn{
+	background: #f9f960; 
+	color: #ffa20a; 
+	box-shadow: 0px 5px 10px -5px #f9f960;
+}
+#btn-cadastra-login, #btn-recovery-senhar{
+	background: transparent !important; 
+	color: #fff;
+	border-radius: 30px;
+}
+.loading_icon_login i{
+	display: none;
+	font-size: 40pt;
+	color: #ffee00;
+	position: absolute;
+	left: 2.2em;
+	z-index: 300;
+	-webkit-animation: loading_icon_login 2s linear infinite;
+	-moz-animation: loading_icon_login 2s linear infinite;
+	-o-animation: loading_icon_login 2s linear infinite;
+	animation: loading_icon_login 2s linear infinite;
+}
+@-webkit-keyframes loading_icon_login{
+	form{
+		transform: rotate(0deg);
+	}
+	to{
+	transform: rotate(360deg);
+	}
+}

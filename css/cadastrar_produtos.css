@@ -1,0 +1,25 @@
+.icon_menu span i{
+    color: #098eaf;
+}
+/* configurações avatar */
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#backgroundInsertProdutos{
+    background: #4AC767;
+}
+#menu-top{
+    background: #4AC767;
+}
+#btn-cadastrar-produtos{
+    background: #0c3dc7 !important;
+    box-shadow: 0px 7px 12px -3px #0c3dc7;
+    color: #fff;
+}
+input#file{
+    border:none;
+}
