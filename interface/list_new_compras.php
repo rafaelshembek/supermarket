@@ -15,8 +15,8 @@ if(isset($_SESSION['id_user'])){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Novas Compras</title>
 </head>
-<body onload="setJason()" style="background: #fafafa;">
-    <div class="ui attached stackable secomdary menu border-0 bg-success">
+<body onload="setJason()" style="background: #4AC767;">
+    <div class="ui attached stackable secomdary menu border-0 shadow-lg" style="background: #4AC767;">
         <p class="ui label m-3">Painel Beta</p>
         <a class="nav-link text-white text-center m-2" href="../"><strong>Inicio</strong></a>
         <a class="nav-link text-white text-center m-2" href="./loja/<?php echo $id_empresa; ?>"><strong>loja</strong></a>
@@ -24,24 +24,27 @@ if(isset($_SESSION['id_user'])){
             <a class="nav-link text-white text-center m-2" href="../logica/logout.php"><strong>Sair</strong></a>
         </div>
     </div>
-    <div class="ui container">
+    <!-- <div class="ui container">
         <h1 class="align-self-center font-weight-light text-muted m-2"><i class="shopping bag icon"></i> Compras</h1>
         
         <span class="floating ui info message showNotif m-2" style="display: none; cursor: pointer;"><i class="sync alternate icon"></i> Atualizar a Pagina</span>
-    </div>
+    </div> -->
     <!-- ============================================================== -->
-    <section class="ui container">
+    <section class="ui container bg-white shadow-lg mt-5" style="border-radius: 20px;">
+        <div class="card-body">
+            <h1 class="align-self-center font-weight-light text-muted m-2"><i class="shopping bag icon"></i> Compras</h1>
+        </div>
         <div class="row m-2">
             <div class="col-md-12">
-                <div class="card-body bg-success">
-                    <h2 class="font-weight-light text-white">Compras realizadas na loja</h2>
-                    <p class="text-white"><strong>Aqui estão as compas feita por seus clientes</strong></p>
+                <div class="card-body">
+                    <h2 class="font-weight-bold text-muted">Compras realizadas na loja</h2>
+                    <p class="alert alert-warning"><strong>Aqui estarão as compas feita por seus clientes</strong></p>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="ui container new_cliente shadow-sm" style="background: #fff;">
-        
+        <section class="ui container new_cliente">
+            
+        </section>
     </section>
     <!-- ============================================================== -->
 

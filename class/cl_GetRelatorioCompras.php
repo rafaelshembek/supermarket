@@ -22,7 +22,7 @@ class GetRelatorioCompras{
         
         return $resultRow;
     }
-    // ==================================
+    // ============ CONFIRMAR O ENVIOR DAS COMPRAS ========
     public function setTrueCompra($id_cliente, $data_compra){
         $update = new Select_DB();
         $params = array(
@@ -38,6 +38,7 @@ class GetRelatorioCompras{
         $return = $get_pagamento->exe_query("SELECT *, CONCAT(datediff(curdate(), forma_pagamento.data_paga)) as registro from forma_pagamento left join cadastro on forma_pagamento.id_usuario = cadastro.idcadastro");
         return $return;
     }
+    // OBTER OS DADOS DA COMPRAS JUNTO COM AS INFORMAÇÕES DO USUARIO
     public function getForma_pagamento2($cliente = null, $data = null){
         $get_pagamento = new Select_DB();
         $param = array(

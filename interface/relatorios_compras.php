@@ -10,6 +10,7 @@ if(isset($_SESSION['id_user']) && isset($_GET['cliente']) && isset($_GET['data']
     if($idCliente && $data){
         $dados_row = $my_dados_cliente->getInformation($idCliente, $data);
         $resultMoradiaCliente = $my_dados_cliente->getRelatorio($idCliente);
+        // OBTER OS DADOS DA COMPRA DO USUARIO JUNTO COM AS INFORMAÇÕES DO USUARIO
         $getdados_moradia = $my_dados_cliente->getForma_pagamento2($idCliente, $data);
                  
         // print_r($getdados_moradia);
