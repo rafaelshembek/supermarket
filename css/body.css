@@ -4,31 +4,9 @@
     background-color: #fff;
     border-radius: 5px;
     width: 100%;
+    margin-top: 3em;
 }
-.pesquisar span{
-    width: 90%;
-    text-align: center;
-    margin: 5px;
-    padding: 3px;
-    color: #4c7ce2;
-    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.pesquisar{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-}
-.pesquisar h1{
-    margin: 5px;
-    padding: 5px 1em;
-    font-size: 20pt;
-    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.pesquisar a{
-    color: #a1a1a1;
-    text-decoration: none;
-}
+
 .link_pesquisar{
     display: flex;
     justify-content: flex-start;

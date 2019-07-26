@@ -1,36 +1,23 @@
-paginaInicial.factory('Pesquisar', function($http){
-    return {
-        search: function(element, $seach){
-            $(element).on('submit', function(event){
-                event.preventDefault();
-            })
-            $($seach).on('keyup', function(){
-              var $items;
-              var path_arquivo = 'logica/search.php';
-              var search = $($seach).serialize();
-                $.post(path_arquivo, search, function(i){
-                    $items += '<span class="card-title">Pesquisando....</span>';
-                })
-                //=====================
-                .done(function(result){
-                    let dados = JSON.parse(result);
-                    $items = resultado(dados).getItem;
-                    $('.pesquisar').html($items);
-                })
-                .fail(function(error){
-                    console.log(error);
-                })
-            })
-        }
-    }
+$(function(){
+    $("#search").on('keyup', function(){
+      var $items;
+      var path_arquivo = 'logica/search.php';
+      var search = $("#search").serialize();
+        $.post(path_arquivo, search, function(i){
+            $items += '<span class="card-title">Pesquisando....</span>';
+        })
+        //=====================
+        .done(function(result){
+            // console.log(result);
+            let dados = JSON.parse(result);
+            $items = resultado(dados).getItem;
+            $('.results').html($items);
+        })
+        .fail(function(error){
+            console.log(error);
+        })
+    })
 })
-
-paginaInicial.controller('formsearchCtrl', function($scope, Pesquisar){
-    
-    Pesquisar.search('#form_search',' #search');
-    
-});
-
 function resultado(dados){
     
     var items = '';
@@ -39,7 +26,7 @@ function resultado(dados){
             let nome_loja = dados[i]['nome_empresa'];
             
             items += '<div class="card-body">';
-            items += '<h5><a href="./interface/loja/'+id_loja+'"><i style="color: #57a60a;" class="fas fa-store"></i> ';
+            items += '<h5><a class="text-muted font-weight-light" href="./interface/loja/'+id_loja+'"><i class="fas fa-store"></i> ';
             items += nome_loja+'</a></h5>';
             items += '</div>';
         
@@ -49,3 +36,10 @@ function resultado(dados){
     }
 
 }
+var $modalShow = $("#result_search").hide();
+$("#search").keyup(function (e) {
+    $($modalShow).show();
+});
+$("body").on('click', function(e){
+    $($modalShow).hide();
+})

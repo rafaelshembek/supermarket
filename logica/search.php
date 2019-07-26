@@ -4,11 +4,11 @@
 
     $nome_pesquisar = filter_input(INPUT_POST, 'search', FILTER_SANITIZE_STRING);
     // $nome_pesquisar = 'mag';
-    if($nome_pesquisar == ''){
-        echo '<p>O campo não foi preenchido</p>';
-        echo '<a href="../logica/../">voltar</a>';
-        exit;
-    }
+    // if($nome_pesquisar == ''){
+    //     echo '<p>O campo não foi preenchido</p>';
+    //     echo '<a href="../logica/../">voltar</a>';
+    //     exit;
+    // }
     $select = new Select_DB();
     
     $param = array(
@@ -19,10 +19,10 @@
         "SELECT cadastro.idcadastro, cadastro.nome_empresa FROM empresa 
        LEFT JOIN cadastro ON empresa.idcadastro = cadastro.idcadastro 
         WHERE nome_empresa LIKE :nome_empresa", $param);
-    // $result = [];
-    // foreach($el as $values){
-    //     $result[] = $values;
-    // }
-    echo json_encode($el);
+    $result = [];
+    foreach($el as $values){
+        $result[] = $values;
+    }
+    echo json_encode($result, JSON_PRETTY_PRINT);
     
 ?>
