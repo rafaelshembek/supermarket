@@ -8,17 +8,24 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
 ?>
 <section class="ui container-fluid">
 <div class="row">
-        <div class="ui attached stachebled vertical menu border-0" id="butoes_tags" style="background: #5f1f9c; box-shadow: 7px 0px 12px -5px #cecece; z-index: 100;">
+        <div id="btnbars" class="ui attached secondary stackabled menu border-0">
+            <div class="item m-2">
+                <button class="ui circular green icon button"><i class="bars icon"></i></button>
+            </div>
+            <div class="item font-weight-bold text-white">Categorias</div>
+        </div>
+        <div class="ui sidebar vertical menu border-0" id="butoes_tags" style="background: #5f1f9c;">
 
         </div>
         <!-- show produtos body inicial plataforma -->
         <?php if(count($resultDow) != 0): ?>
-        <div class="col-md-10 bg-white">
-            <div class="card-body produtos_vitrini d-flex justify-content-center align-content-center flex-wrap">
+        <!-- <div class="dimmed pusher"> -->
+            <div class="col-md-12 d-flex justify-content-center align-content-center">
+            <div class="card-body produtos_vitrini bg-white d-flex justify-content-center align-content-center flex-wrap">
                 <?php
                     foreach($resultDow as $key => $column){
                     
-                        echo '<div class="card_produtos shadow align-self-center m-1 bg-white" data-tags="'.$column['categoria'].'">';
+                        echo '<div class="card_produtos align-self-center m-1 bg-white" data-tags="'.$column['categoria'].'">';
                             echo '<div class="card-body text-center">';
                                 echo '<p class="font-weight-bold text-muted">'.utf8_decode($column["produto"]).'</p>';
                             echo '</div>';
@@ -42,8 +49,8 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
                     }
                 ?>
             </div>
-        
-        </div>
+            </div>
+        <!-- </div> -->
         <?php else: ?>
         <div class="col-md-10 d-flex justify-content-center align-content-center flex-wrap bg-white border">
             <div class="row d-flex justify-content-center align-content-center flex-wrap">

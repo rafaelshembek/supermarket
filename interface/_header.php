@@ -42,7 +42,7 @@
 </head>
 <body>
 <script>
-    // SDK do facebook
+    // SDK do facebookk
   window.fbAsyncInit = function() {
     FB.init({
       appId            : 'your-app-id',

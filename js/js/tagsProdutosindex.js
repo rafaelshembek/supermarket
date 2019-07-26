@@ -39,3 +39,8 @@ $(function(){
         });
     })
 }());
+// button bars show categoria asidebar index
+$('#btnbars button').on('click', function(e){
+    $('.ui.sidebar')
+    .sidebar('toggle');
+})
