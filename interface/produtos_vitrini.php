@@ -52,7 +52,7 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
             </div>
         <!-- </div> -->
         <?php else: ?>
-        <div class="col-md-10 d-flex justify-content-center align-content-center flex-wrap bg-white border">
+        <div class="col-md-12 d-flex justify-content-center align-content-center">
             <div class="row d-flex justify-content-center align-content-center flex-wrap">
                 <div class="col-md-6 shadow-lg" style="border-radius: 10px;">
                     <div class="card-body m-0 text-center">
