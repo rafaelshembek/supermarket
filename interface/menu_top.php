@@ -8,7 +8,7 @@
             <!-- <a class="nav-link font-weight-normal" style="color:#aeaeae;" href="#!/"><strong><i class="fas fa-home"></i> Inicio</strong></a> -->
         </div>
         <div class="item justify-content-center">
-            <a id="loginInicialNav" class="nav-link font-weight-normal" style="color:#aeaeae;" href="#!/login"><strong><i class="fas fa-sign-in-alt"></i> login</strong></a>
+            <a id="loginInicialNav" class="nav-link font-weight-normal" href="#!/login"><strong>login</strong> <i class="fas fa-sign-in-alt"></i></a>
             <!-- modal login -->
             <div class="shadow" id="modalLoginNav">
                     <div class="card-body text-center">
@@ -40,10 +40,10 @@
             </div>
         </div>
         <div class="item justify-content-center">
-            <a class="ui button" style="background: #ff9b83; color: #fff; box-shadow: 0px 5px 10px -5px #ff9b83; border-radius: 30px;" href="interface/signup"><i class="fas fa-clipboard"></i> cadastre-se</a>
+            <a class="ui button" style="background: #ff9b83; color: #fff; box-shadow: 0px 5px 10px -5px #ff9b83; border-radius: 30px;" href="interface/signup">cadastre-se</a>
         </div>
         <div class="item justify-content-center">
-            <a class="ui button" style="background: #f1f1f1; color:#aeaeae; border-radius: 30px;" href="interface/esqueceu_senha"><strong>esqueceu a senha?</strong></a>
+            <a class="nav-link" href="interface/esqueceu_senha"><strong>esqueceu a senha?</strong></a>
         </div>
     </div>
 </ul>
