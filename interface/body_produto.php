@@ -1,5 +1,5 @@
+<div class="card-body produtos_vitrini bg-white d-flex justify-content-center align-content-center flex-wrap">
 <?php
-
     require_once('../class/Select_DB.php');
             $id_login = isset($_SESSION['id_user']) ? $_SESSION['id_user'] : "";//usuario online
             // $id_loja = isset($_GET['username']) ? $_GET['username'] : ""; //id da loja logada
@@ -72,4 +72,5 @@
         echo    '</div>';
     echo    '</div>';
             }
-    ?>
+?>
+</div>

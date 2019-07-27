@@ -7,7 +7,7 @@
             case 'empresa':
                     echo '<div class="ui attached secondary stackable medium menu shadow border-0" style="background: #fff;">';
                     echo '<div class="d-flex justify-content-center">';
-                        echo '<div class="card-body"><img src="../../img/logo_oficial/logo-super.market.png" width="100em" alt=""></div>';
+                        echo '<div class="card-body"><img src="../../img/logo_oficial/logo-super.market.png" width="100em" alt="logo oficial"></div>';
                     echo '</div>';
                     echo '<div class="right menu">';
                         echo '<div class="item justify-content-center">';
@@ -26,8 +26,8 @@
             
             case 'usuario':
                     echo '<div class="ui attached secondary stackable menu shadow border-0" style="background: #fff;">';
-                    echo '<div class="d-flex justify-content-center">';
-                        echo '<div class="card-body"><img src="../../img/logo_oficial/logo-super.market.png" width="100em" alt=""></div>';
+                    echo '<div class="item">';
+                        echo '<img src="../../img/logo_oficial/logo-super.market.png" width="200em" alt="mercado facil">';
                     echo '</div>';
                     echo '<div class="right menu">';
                         echo '<div class="item justify-content-center">';

@@ -60,9 +60,6 @@ section.loja_perfil{
     align-items: center;
     flex-wrap: wrap;
 }
-section.loja_perfil img{
-    width: 100%;
-}
 .avatar_perfil{
     margin: 5px;
     display: flex;
@@ -166,12 +163,7 @@ section.loja_perfil img{
     cursor: pointer;
 }
 /* body_produtos */
-.produto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
 #produto_loja{
     border-radius: 10px;
     border: 0.25px solid #f1f1f1;

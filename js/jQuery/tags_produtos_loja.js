@@ -20,7 +20,7 @@ $(function(){
         $('<a/>', {
             text: 'Todos os produtos',
             style: 'background: #4AC767; color: #fff; font-family: Century Gothic',
-            class: 'item shadow font-weight-bold',
+            class: 'item font-weight-bold',
             click: function(e){
                 e.preventDefault();
                 $produtos.show();

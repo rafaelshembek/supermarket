@@ -61,7 +61,7 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="../../Semantic-UI-CSS-master/semantic.min.css">
     <link rel="stylesheet" href="../../css/loja.css">
     <link rel="stylesheet" href="../../css/nav_top.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -102,106 +102,90 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
         </section>
     <?php return; ?>
     <?php elseif($loja->getTipo_conta() == 'empresa'):?>
-    <div class="row">
-        <div class="col-md-4 d-flex justify-content-center align-content-center flex-wrap">
-            <div class="card-body text-center">
-                <img src="../../img/logo_oficial/logo-marca.png" width="155em" alt="">
-            </div>
+    <div class="ui attached stackable secondary menu bg-white shadow">
+        <div class="item justify-content-center">
+            <div class="h3 font-weight-light text-muted"><i class="fas fa-store"></i> Nome de sua loja</div>
         </div>
-        <div class="col-md-4 d-flex justify-content-center align-content-center flex-wrap">
-            <div class="ui massive teal label"><i class="fas fa-store"></i> Nome de sua loja</div>
-        </div>
-        <div class="col-md-4">
-            <div class="card-body">
-                <div class="ui stackable card-body d-flex justify-content-center align-self-center" style="background: #fff;">
-                    <?php
-                            $resultado = $total ?? 0;
-                            if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
-                                if($total == 0)
-                                {   
-                                    echo '<a  class="ui steps" href="../carrinho/'.$_GET['refLoja'].'">';
-                                    echo '<div class="step">';
-                                    echo '<i class="cart icon"></i>';
-                                    echo '<div class="content">';
-                                        echo '<div class="title">Carrinho de Compras</div>';
-                                        echo '<div class="description">'.$resultado.'</div>';
-                                    echo '</div>';
-                                    echo '</div>';
-                                    echo '</a>';
-                                }else
-                                {
+        <div class="right menu">
+            <div class="item justify-content-center">
+                <?php
+                    $resultado = $total ?? 0;
+                    if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
+                        if($total == 0)
+                        {   
+                            echo '<a  class="nav-link" href="../carrinho/'.$_GET['refLoja'].'">';
+                            echo '<i class="cart icon"></i>';
+                            echo 'Carrinho de Compras';
+                            echo '<strong class="m-3 font-weight-bold" style="font-size: 30px;">'.$resultado.'</strong>';
+                            echo '</a>';
+                        }else
+                        {
 
-                                    echo '<a  class="ui mini shadow-sm steps border-0" href="../carrinho/'.$_GET['refLoja'].'">';
-                                    echo '<div class="step">';
-                                    echo '<i class="cart icon"></i>';
-                                    echo '<div class="content">';
-                                        echo '<div class="title">Carrinho de Compras</div>';
-                                        echo '<div class="description">'.$resultado.'</div>';
-                                    echo '</div>';
-                                    echo '</div>';
-                                    echo '</a>';
-                                }
-                            }else if(!isset($_SESSION['id_user']) && isset($_GET['refLoja'])){
-                                
-                                echo '<a  class="ui steps" href="../carrinho/'.$_GET['refLoja'].'">';
-                                echo '<div class="step">';
-                                echo '<i class="cart icon"></i>';
-                                echo '<div class="content">';
-                                    echo '<div class="title">Carrinho de Compras</div>';
-                                    echo '<div class="description">'.$resultado.'</div>';
-                                echo '</div>';
-                                echo '</div>';
-                                echo '</a>';
-                            }
-                        ?>
-                </div>
+                            echo '<a  class="nav-link" href="../carrinho/'.$_GET['refLoja'].'">';
+                            echo '<i class="cart icon"></i>';
+                                echo '<div class="title">Carrinho de Compras</div>';
+                                echo '<div class="description">'.$resultado.'</div>';
+                            echo '</a>';
+                        }
+                    }else if(!isset($_SESSION['id_user']) && isset($_GET['refLoja'])){
+                        
+                        echo '<a  class="ui steps" href="../carrinho/'.$_GET['refLoja'].'">';
+                        echo '<i class="cart icon"></i>';
+                            echo '<div class="title">Carrinho de Compras</div>';
+                            echo '<div class="description">'.$resultado.'</div>';
+                        echo '</a>';
+                    }
+                ?>
+                
             </div>
         </div>
     </div>
     <!--=========================-->
     <!--=========================-->
-    <!-- <header id="sessao_perfil"> -->
+    <header>
         <div id="sessao_perfil" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" style="height: 400px;" role="listbox">
-            <div class="carousel-item active" style="width: 100%; height:100%;">
-                <div class="a-block w-100 h-100 d-flex justify-content-center align-content-center flex-column">
-                        <h1 class="text-white font-weight-light align-self-center text-center">Espaço dedicado para sua <strong class="ui massive teal label"><i class="fas fa-store"></i> Loja</strong>!</h1>
-                        <p class="text-white text-center align-self-center font-weight-light">Tenha as melhores promoções de nossos produtos</p>
-                </div>
+            <!-- <div class="carousel-inner" style="height: 400px;" role="listbox">
+                <div class="carousel-item active h-100 w-100">
+                    <div class="a-block h-100 d-flex justify-content-center align-content-center flex-column">
+                            <div class="h1 text-white font-weight-light text-center">Espaço dedicado para sua <i class="fas fa-store"></i> Loja!</div>
+                            <p class="text-white text-center align-self-center font-weight-light">Tenha as melhores promoções de nossos produtos</p>
+                    </div>
+                </div> -->
+                <!-- <div class="carousel-item text-center" style="height:100%;">
+                    <div class="d-block w-100 h-100 d-flex justify-content-center align-content-center flex-column">
+                            <h1 class="text-whiter align-self-center font-weight-light text-center"><i class="bullhorn icon"></i> Banner de sua loja ou promoções de seus produtos</h1>
+                            <h2 class="alert text-white align-self-center text-center">Duvidas ou Sugestões</h2>
+                            <p class="text-white align-self-center text-center">Entre <strong>Em Contato</strong> Agora Mesmo</p>
+                            <a class="ui red button align-self-center" href="../../"><i class="coffee icon"></i> Contato Dev</a>
+                    </div>
+                </div> -->
             </div>
-            <div class="carousel-item text-center" style="width: 100%; height:100%;">
-                <div class="d-block w-100 h-100 d-flex justify-content-center align-content-center flex-column">
-                        <h1 class="text-whiter align-self-center font-weight-light ui massive teal label text-center"><i class="bullhorn icon"></i> Banner de sua loja ou promoções de seus produtos</h1>
-                        <h2 class="alert text-white align-self-center text-center">Duvidas ou Sugestões</h2>
-                        <p class="text-white align-self-center text-center">Entre <strong>Em Contato</strong> Agora Mesmo</p>
-                        <a class="ui red button align-self-center" href="../../"><i class="coffee icon"></i> Contato Dev</a>
-                </div>
-            </div>
+            <!-- <a class="carousel-control-prev" href="#sessao_perfil" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sessao_perfil" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a> -->
         </div>
-        <a class="carousel-control-prev" href="#sessao_perfil" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#sessao_perfil" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        </div>
-    <!-- </header> -->
+    </header>
     <!-- barra de categoria -->
-    <section class="card-body barra-tags shadow " style="background: #5f1f9c;">
-        <h4 class="card-body text-white font-weight-bold m-1">Categorias <i class="tags icon"></i></h4>
-        <div class="ui attached stackable secondary menu border-0" id="butoes_tags">
-            <!-- views tags aquir -->
-        </div>
-    </section>
-    <section class="row d-flex justity-content-center flex-column">
-        <!-- mostrar os produtos na pagina -->
-        <section class="d-flex justity-content-center flex-wrap m-2 align-self-center col-md-10 bg-white produto">
-            <!-- ====== produtos aqui viar ajax -->
+<div id="btnbarsLoja" class="ui attached secondary stackabled menu border-0" style="background: #4AC767; width: 100%">
+    <div class="item m-2">
+        <button class="ui circular green icon button"><i class="bars icon"></i></button>
+    </div>
+    <div class="item font-weight-bold text-white">Categorias</div>
+</div>
+<div class="ui sidebar vertical menu border-0" id="butoes_tags" style="background: #5f1f9c;">
+    <!-- views tags aquir -->
+</div>
+<div class="row">
+    <!-- mostrar os produtos na pagina -->
+    <div class="col-md-12">
             <?php require_once('body_produto.php'); ?>
-        </section>
-    </section>
+    </div>
+</div>
     <?php else: ?>
         <!-- AVISO DE VIOLAÇÃO DA URL -->
         <section class="row d-flex justify-content-center">
@@ -227,7 +211,7 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     <!-- =================== -->
     <!-- ===== rodaper ===== -->
     <!-- =================== -->
-    <footer class="container-fluid" style="background: #f1f1f1;">
+    <footer class="ui container-fluid" style="background: #f1f1f1;">
         <div class="ui container">
             <div class="row">
                 <div class="col-md-4">
@@ -325,7 +309,7 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
 
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/angular/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="../../Semantic-UI-CSS-master/semantic.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../js/jQuery/tags_produtos_loja.js"></script>
     <script src="../../js/js/lojaApp.js"></script>
