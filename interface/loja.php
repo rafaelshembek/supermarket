@@ -68,6 +68,11 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     <title><?php echo "Loja | Marketplace"; ?></title>
 </head>
 <body>
+<div class="ui sidebar vertical menu border-0" id="butoes_tags" style="background: #5f1f9c;">
+    <!-- views tags aquir -->
+</div>
+<section class="dimmer pusher">
+
     <input id="id_loja" type="hidden" value="<?php echo $_GET['refLoja']?>">
     <?php 
         if(isset($_SESSION['id_user'])){
@@ -90,7 +95,7 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     <?php
         $loja = new Funcoes();
         $loja->loja($id_url);
-        if($loja->getTipo_conta() == 'usuario'):?>
+    if($loja->getTipo_conta() == 'usuario'):?>
         <section class="row d-flex justify-content-center">
             <div class="col-md-6">
                 <div class="m-5 card-body text-center">
@@ -144,30 +149,8 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     <!--=========================-->
     <header>
         <div id="sessao_perfil" class="carousel slide" data-ride="carousel">
-            <!-- <div class="carousel-inner" style="height: 400px;" role="listbox">
-                <div class="carousel-item active h-100 w-100">
-                    <div class="a-block h-100 d-flex justify-content-center align-content-center flex-column">
-                            <div class="h1 text-white font-weight-light text-center">Espaço dedicado para sua <i class="fas fa-store"></i> Loja!</div>
-                            <p class="text-white text-center align-self-center font-weight-light">Tenha as melhores promoções de nossos produtos</p>
-                    </div>
-                </div> -->
-                <!-- <div class="carousel-item text-center" style="height:100%;">
-                    <div class="d-block w-100 h-100 d-flex justify-content-center align-content-center flex-column">
-                            <h1 class="text-whiter align-self-center font-weight-light text-center"><i class="bullhorn icon"></i> Banner de sua loja ou promoções de seus produtos</h1>
-                            <h2 class="alert text-white align-self-center text-center">Duvidas ou Sugestões</h2>
-                            <p class="text-white align-self-center text-center">Entre <strong>Em Contato</strong> Agora Mesmo</p>
-                            <a class="ui red button align-self-center" href="../../"><i class="coffee icon"></i> Contato Dev</a>
-                    </div>
-                </div> -->
+                    <!-- informações banner aquir -->
             </div>
-            <!-- <a class="carousel-control-prev" href="#sessao_perfil" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#sessao_perfil" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a> -->
         </div>
     </header>
     <!-- barra de categoria -->
@@ -177,15 +160,8 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     </div>
     <div class="item font-weight-bold text-white">Categorias</div>
 </div>
-<div class="ui sidebar vertical menu border-0" id="butoes_tags" style="background: #5f1f9c;">
-    <!-- views tags aquir -->
-</div>
-<div class="row">
     <!-- mostrar os produtos na pagina -->
-    <div class="col-md-12">
-            <?php require_once('body_produto.php'); ?>
-    </div>
-</div>
+    <?php require_once('body_produto.php'); ?>
     <?php else: ?>
         <!-- AVISO DE VIOLAÇÃO DA URL -->
         <section class="row d-flex justify-content-center">
@@ -306,7 +282,7 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     </div>
 </div>
     </footer>
-
+</section>
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/angular/angular.min.js"></script>
     <script src="../../Semantic-UI-CSS-master/semantic.min.js"></script>
