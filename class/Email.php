@@ -8,15 +8,8 @@ require('../PHPMailer/src/SMTP.php');
 require('../PHPMailer/src/Exception.php');
 
 class Email{
-    public function enviar_Email($messagem, $chave, $assunto, $destinatario){
+    public function enviar_Email($messagem, $senhaRandom, $assunto, $destinatario){
     try{
-        $query_string = '';
-        $param_url = array(
-            'ref' => $destinatario,
-            'c' => $chave
-        );
-        $query_string = http_build_query($param_url, '&');
-
         $mail = new PHPMailer(true);
         $mail->isSMTP();
         $mail->SMTPDebug = 0;
@@ -40,7 +33,7 @@ class Email{
             $mail->Body .= '<h1 style="font-family: Lucida Sans Regular; color: #777">Rescuperação de Senha!</h1>';
             $mail->Body .= '<p>'.$messagem.'</p>';
             $mail->Body .= '<div style="padding: 12px;">
-                                <a style="text-decoration: none; border-radius: 3px; padding: 12px; background-color: rgb(48, 149, 87); color: #fff;" href="localhost/marketplace/interface/altera_nova_senha.php?'.$query_string.'">Criar uma nova senha</a>
+                                <h1 style="text-decoration: none; border-radius: 3px; padding: 12px; background-color: rgb(48, 149, 87); color: #fff;">'.$senhaRandom.'</h1>
                             </div>';
         $mail->Body .= '</section>';
 
@@ -51,7 +44,7 @@ class Email{
         echo '</div>';
     }catch(Exception $e){
             echo '<div class="ui negative message">';
-                echo '<p class="ui header">Erro ao enviar um email!</p>';
+                echo '<p class="ui header">Erro ao enviar o email!</p>';
                 echo '<div class=""><a class="ui basic button" href="../interface/esqueceu_senha.php">voltar</a></div>';
             echo '</div>';
             }

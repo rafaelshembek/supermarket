@@ -21,7 +21,7 @@
                 <div class="showDangerMessage shadow alert alert-danger text-center"></div>
                 <div class="showWarningMessage shadow alert alert-warning text-center"></div>
                 <div class="card-body text-center">
-                    <img src="../img/logo_oficial/logo-small-top-page-cadastro.png" alt="">
+                    <img src="../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt="">
                     <div class="h1 text-muted font-weight-ligth">Recupere sua Senha</div>
                 </div>
                 <div class="card-body text-center">

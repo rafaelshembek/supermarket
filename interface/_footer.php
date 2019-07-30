@@ -5,7 +5,7 @@
 
             <div class="col-md-8 footer-side-left d-flex justify-content-center align-content-center flex-wrap flex-column">
                 <div class="card-body mt-3 text-center p-2">
-                    <img src="./img/logo_oficial/logo-marketplace-small-page-cadastro.png" width="200em" alt="" srcset="">
+                    <img src="./img/logo_oficial/logo-small-top-page-cadastro.png" width="200em" alt="" srcset="">
                 </div>
                 <div class="card-body text-center text-white">
                     <div class="h1 font-weight-light text-white">Grupo Empresarial</div>

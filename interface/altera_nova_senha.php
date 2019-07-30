@@ -1,3 +1,7 @@
+<?php
+    require_once('../class/Select_DB.php');
+    $select = new Select_DB();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,14 +16,15 @@
 <?php
     $c = "";
     $ref = "";
-    
-    // var_dump($_GET['ref']);
-    // $objectCopy = clode $_GET['ref'];
-    // var_dump($objectCopy);
 
+
+    
     if(isset($_GET['c']) && isset($_GET['ref'])):
-        $chave = preg_replace('/[^[:alnum:]]/','',$_GET['c']);
-        $ref = $_GET['ref'];
+        $chave = preg_replace('/[^[:alnum:]]/','',$_GET['c']); //chave
+        $ref = $_GET['ref']; // email
+
+        $el = $select->exe_query("SELECT * FROM cadastro WHERE email = " . $_GET['ref']);
+        var_dump($el);
 ?>
 <section class="container">
     <div class="row d-flex justify-content-center">
@@ -32,7 +37,7 @@
                         <input type="hidden" name="chave" value="<?php echo $_GET['c'] ?>">
                             <div class="field">
                                 <div class="ui disabled input">
-                                    <input type="hidden" name="email" value="<?php echo $ref; ?>">
+                                    <input type="email" name="email" value="<?php echo $ref; ?>">
                                 </div>
                             </div>
                             <div class="field">

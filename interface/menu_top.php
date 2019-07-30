@@ -1,7 +1,7 @@
 <ul class="ui attached stackable secondary menu border-0 shadow">
     <div class="card-body text-white text-center">
         <img src="./img/logo_oficial/logo-super.market.png" height="30em" alt="">
-        <span class="ui label m-2" style="background: #06C202; color: #fff;">Comprou Chegou!</span>
+        <span class="alert text-muted font-weight-normal">Compre com mais segurança e rapidez</span>
     </div>
     <div class="right menu manu_top">
         <div class="item justify-content-center">
