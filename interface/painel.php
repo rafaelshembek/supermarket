@@ -24,7 +24,7 @@
 <div class="ui attached secondary stackable shadow menu border-0" id="menuPainelBars">
     <div class="card-body">
         <!-- logo here! -->
-        <img src="../img/logo_oficial/logo-super-market-2.png" width="100em" alt="">
+        <img src="../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt="">
     </div>
 </div>
 <section class="ui container bg-white shadow m-4">
@@ -51,7 +51,7 @@
 <!-- menu painel -->
 <div class="ui attached stackable secondary menu border-0">
     <div class="card-body text-center">
-        <img src="../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt="">
+        <img src="../img/logo_oficial/logo-super.market.png" width="100em" alt="">
     </div>
     <div class="item justify-content-center">
         <a class="nav-link" href="../" style="color:#aeaeae;"><i class="fas fa-home"></i> <strong>Home Page</strong></a>

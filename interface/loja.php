@@ -79,7 +79,7 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
             require_once('barra_top_loja.php');
         }else{
             echo '<div class="ui attached secondary stackable menu border-0 shadow" style="background: #56d465;">';
-            echo '<div class="card-body"><img src="../../img/logo_oficial/logo-super-market-2.png" width="100em" alt=""></div>';
+            echo '<div class="card-body"><img src="../../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt=""></div>';
             echo '<div class="right menu">';
             echo '<div class="item justify-content-center">';
                 echo '<a class="nav-link text-white" href="../../"><strong>inicio</strong></a>';
@@ -252,7 +252,7 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
                 </div>
                 <div class="col-md-4 text-center text-muted">
                     <div class="card-body m-2 d-flex justify-content-center">
-                        <img class="ui small image d-flex align-self-center" src="../../img/logo_oficial/logo-small-top-page-cadastro.png" alt="logo marca super.market">
+                        <img class="ui small image d-flex align-self-center" src="../../img/logo_oficial/logo-super.market.png" alt="logo marca super.market">
                     </div>
                     <div class="card-body m-2 text-muted">
                         <h3 class="font-weight-light">Grupo Empresarial <i class="flag br"></i></h3>

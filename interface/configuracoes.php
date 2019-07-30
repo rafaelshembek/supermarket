@@ -36,7 +36,7 @@
         }
     ?>
     <div class="ui attached stackable secondary menu shadow border-0" style="background: #4AC767;">
-        <div class="card-body">        <img src="../img/logo_oficial/logo-super-market-2.png" width="100em" alt=""></div>
+        <div class="card-body">        <img src="../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt=""></div>
     </div>
 <section class="ui container m-4 bg-white shadow">
     <!-- MENU -->

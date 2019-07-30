@@ -30,7 +30,7 @@
     <!-- menu top -->
     <div class="ui secondary menu border-0 shadow" id="menu-top">
         <div class="card-body">
-            <img src="../img/logo_oficial/logo-super-market-2.png" width="100em" alt="">
+            <img src="../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt="">
         </div>
     </div>
 <section class="ui container bg-white shadow" style="border-radius: 15px;">

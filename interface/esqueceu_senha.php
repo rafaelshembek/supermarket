@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="ui attached stackable secondary segment border-0 menu shadow bgMenuRecoveryPassword">
-            <img src="../img/logo_oficial/logo-super-market-2.png" width="100em" alt="">
+            <img src="../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt="">
     </div>
     <section class="ui container mt-4 shadow d-flex justify-content-center align-content-center flex-column flex-wrap backgroundRecoveryPassword">
         <div class="row">
@@ -25,7 +25,7 @@
                     <div class="h1 text-muted font-weight-ligth">Recupere sua Senha</div>
                 </div>
                 <div class="card-body text-center">
-                    <p>Verificaremos se o seu email esta em nosso banco de dado</p>
+                    <p>Verificaremos se o seu email existe em nosso banco de dado</p>
                     <p>Enviaremos uma nova senha para seu email</p>
                 </div>
                 <div class="card-body">

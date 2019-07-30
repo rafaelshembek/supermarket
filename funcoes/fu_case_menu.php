@@ -10,9 +10,6 @@ class menu_Top{
             echo '<div class="card-body text-center">';
                 echo '<img src="img/logo_oficial/logo-super.market.png" width="100em" alt="logo marketplace">';
             echo '</div>';
-            echo '<div class="card-body text-center">';
-                echo '<div class="title font-weight-bold text-muted">Tenha uma otimas compras</div>';
-            echo '</div>';
                 echo '<ul class="right menu">';
                     echo'<div class="item justify-content-center">';
                     echo '<a href="interface/list_new_compras.php" type="button" style="background: #fff !important;" class="ui button"><strong>Relatorio de Compras</strong></a>';
