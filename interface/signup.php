@@ -11,9 +11,9 @@
     <title>Pagina de Cadastro</title>
 </head>
 <body>
-<ul class="ui attached stackable secondary segment menu border-0 shadow" style="background: #0DC123;">
+<ul class="ui attached stackable secondary segment menu border-0 shadow" style="background:  #4AC767;">
     <div class="d-flex justify-content-center text-white">
-        <img src="../img/logo_oficial/logo-super-market-2.png" width="100em" alt="">
+        <img src="../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt="">
     </div>
 </ul>
 <section class="card-body" ng-controller="formSignupCtrl">
@@ -26,7 +26,7 @@
                                         <div class="row">
                                             <div class="col-md-4">
                                             <div class="card-body d-flex justify-content-center align-content-center flex-wrap text-center">
-                                                <img src="../img/logo_oficial/logo-small-top-page-cadastro.png" alt="logo supermarket">
+                                                <img src="../img/logo_oficial/logo-super.market.png" width="200em" alt="logo supermarket">
                                             </div>
                                             </div>
                                             <div class="col-md-4">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="card-body text-center">
-                    <img src="../img/logo_oficial/logo-marketplace-small-page-cadastro.png" width="200em" alt="logo supermarket">
+                    <img src="../img/logo_oficial/logo-small-top-page-cadastro.png" width="200em" alt="logo supermarket">
                 </div>
                 <div class="card-body text-center text-white">
                     <p><strong class="ui orange header">Power by</strong> Creative Agency</p>

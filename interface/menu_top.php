@@ -12,7 +12,7 @@
             <!-- modal login -->
             <div class="shadow" id="modalLoginNav">
                     <div class="card-body text-center">
-                        <img src="./img/logo_oficial/logo-marketplace-small-page-cadastro.png" width="100em" alt="">
+                        <img src="./img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt="">
                     </div>
                     <div class="loading_icon_login">
                     <i class="fas fa-spinner"></i>

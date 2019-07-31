@@ -18,7 +18,7 @@
                     switch ($tipo_conta) {
                         case 'empresa':
                             echo '<div class="ui attached secondary stackable small menu shadow border-0" style="background: #4AC767;">';
-                                echo '<div class="card-body text-center"><img src="../../img/logo_oficial/logo-super-market-2.png" width="100em"></div>';
+                                echo '<div class="card-body text-center"><img src="../../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em"></div>';
                                 echo '<div class="right menu">';
                                     echo '<div class="item">';
                                     echo '<a class="nav-link text-white" href="../../"><strong>inicio</strong></a>';
