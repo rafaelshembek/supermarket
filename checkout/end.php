@@ -24,15 +24,12 @@ class end_compras{
             ':idPedido' => $idMaximo,
             ':id_usuario' => $dados[':id_usuario'],
             ':id_loja' => $dados[':id_loja'],
-            ':produto' => $dados[':nome_produto'],
-            ':descricao' => $dados[':descricao_produto'],
-            ':preco' => $dados[':preco_produto'],
             ':qty_produto' => $dados[':qty'],
             ':vendas_total' => $dados[':valor_total'],
             ':dataPedido' => $dados[':dataPedido'],
-            // ':status_compras' => 0
+            ':id_produto' => $dados[':id_produto']
         );
-        $insert->exe_insert("INSERT INTO pedido(idPedido, id_usuario, id_loja, produto, descricao, preco, qty_produto, valor_total, data_compra) VALUES(:idPedido, :id_usuario, :id_loja, :produto, :descricao, :preco, :qty_produto, :vendas_total, :dataPedido)", $param);
+        $insert->exe_insert("INSERT INTO pedido(idPedido, id_usuario, id_loja, qty_produto, valor_total, data_compra, id_produto) VALUES(:idPedido, :id_usuario, :id_loja, :qty_produto, :vendas_total, :dataPedido, :id_produto)", $param);
     }
 
     function dados_pagamento($dados){
