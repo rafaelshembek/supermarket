@@ -28,7 +28,7 @@
     <div class="row" style="background: #f96930;">
         <div class="col-md-4">
             <div class="card-body">
-                <div class="h3 text-white font-weight-light">Produtos mais procurado</div>
+                <div class="h3 text-white font-weight-light">Produtos mais procurados</div>
             </div>
         </div>
     </div>

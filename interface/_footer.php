@@ -2,17 +2,11 @@
 <!-- rodaper -->
 <footer class="ui container-fluid">
         <div class="row">
-
-            <div class="col-md-8 footer-side-left d-flex justify-content-center align-content-center flex-wrap flex-column">
-                <div class="card-body mt-3 text-center p-2">
-                    <img src="./img/logo_oficial/logo-small-top-page-cadastro.png" width="200em" alt="" srcset="">
-                </div>
-                <div class="card-body text-center text-white">
+            <div class="col-md-8 footer-side-left d-flex justify-content-center align-content-center flex-wrap">
+                
+                <div class="card-body text-white">
+                    <img src="./img/logo_oficial/logo-small-top-page-cadasttro.png" width="200em" alt="mercado bay" srcset="">
                     <div class="h1 font-weight-light text-white">Grupo Empresarial</div>
-                </div>
-                <div class="card-body d-flex justify-content-center align-content-center">
-                    <a href="#!" class="fonte-weight-light ui orange header m-1">Termos de Serviços</a>
-                    <a href="#!" class="fonte-weight-light ui orange header m-1">Nota de responsabilidade</a>
                 </div>
                 <div class="card-body text-white text-center">
                     <!-- <p class="font-weight-light">Total de <strong>empresas</strong></p> -->

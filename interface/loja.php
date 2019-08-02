@@ -78,14 +78,14 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
         if(isset($_SESSION['id_user'])){
             require_once('barra_top_loja.php');
         }else{
-            echo '<div class="ui attached secondary stackable menu border-0 shadow" style="background: #56d465;">';
+            echo '<div class="ui attached secondary stackable menu border-0 shadow" style="background: #095CE8;">';
             echo '<div class="card-body"><img src="../../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt=""></div>';
             echo '<div class="right menu">';
             echo '<div class="item justify-content-center">';
-                echo '<a class="nav-link text-white" href="../../"><strong>inicio</strong></a>';
+                echo '<a class="nav-link text-white font-weight-bold" href="../../"><strong>inicio</strong></a>';
             echo '</div>';
             echo '<div class="item justify-content-center">';
-            echo '<a class="nav-link text-white" href="../../interface/signup"><strong>Cadastre-se</strong></a>';
+            echo '<a class="nav-link text-white font-weight-bold" href="../../interface/signup"><strong>Cadastre-se</strong></a>';
             echo '</div>';
             echo '</div>';
             echo '</div>';
@@ -108,9 +108,9 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     <?php return; ?>
     <?php elseif($loja->getTipo_conta() == 'empresa'):?>
     <div class="ui attached stackable secondary menu bg-white shadow">
-        <div class="item justify-content-center">
+        <!-- <div class="item justify-content-center">
             <div class="h3 font-weight-light text-muted"><i class="fas fa-store"></i> Nome de sua loja</div>
-        </div>
+        </div> -->
         <div class="right menu">
             <div class="item justify-content-center">
                 <?php
