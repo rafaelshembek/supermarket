@@ -19,6 +19,6 @@
     ?>
     <?php 
         // lojas qualidade em vendas
-        // require_once('interface/lojas_quality.php');
+        require_once('interface/product_more_bay.php');
     ?>
 <?php require_once('interface/_footer.php'); ?>
