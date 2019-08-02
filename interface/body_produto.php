@@ -1,6 +1,8 @@
 <div class="row">
-    <div class="col-md-12">
-        <div class="card-body produtos_vitrini bg-white d-flex justify-content-center align-content-center flex-wrap">
+    <div class="card-body" style="background: #fafafa;">
+        <div class="h3 font-weight-light text-muted ml-5">Produtos Variados</div>
+    </div>
+    <div class="col-md-12 produtos_vitrini bg-white d-flex justify-content-center align-content-center flex-wrap">
         <?php
             require_once('../class/Select_DB.php');
                     $id_login = isset($_SESSION['id_user']) ? $_SESSION['id_user'] : "";//usuario online
@@ -11,6 +13,7 @@
                     $el = $select->exe_query("SELECT * FROM produto JOIN categorias on produto.id_categoria = categorias.id_categoria WHERE produto.id_loja = $id_refLoja",null,true,true);            
                     if($el != null){
                         foreach($el as $value){
+                            $id_produto =  $value['id_produto'];
                             $produto =  $value['produto'];
                             $descricao = $value['descricao'];
                             $categoria = $value['categoria'];
@@ -31,6 +34,7 @@
                             echo '<div class="card-title nome_categoria">';
                                 echo '<input type="hidden" name="categoria" id="categoria" value="'.$categoria.'">';
                             echo '</div>';
+                                    echo '<input type="hidden" name="id_produto" id="id_produto" value="'.$id_produto.'">';
                                     echo '<input type="hidden" name="nome_produto" id="nome_produto" value="'.$produto.'">';
                                     echo '<input type="hidden" name="descricao" id="descricao" value="'.$descricao.'">';
                             echo '<div class="card-body">';
@@ -45,7 +49,7 @@
                                         $valor = number_format($preco, 2, '.', ',');    
                                     echo 'R$'.$valor;
                                     echo '</div>';
-                                echo '<div class="ui red button">';
+                                echo '<div class="ui green button">';
                                     echo '<i class="shopping cart icon"></i>';
                                 echo '</div>';
                                 echo '</button>';
@@ -75,6 +79,5 @@
             echo    '</div>';
                     }
         ?>
-        </div>
     </div>
 </div>

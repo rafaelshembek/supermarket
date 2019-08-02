@@ -61,9 +61,14 @@ if(isset($_SESSION['id_user']) && isset($_GET['refLoja'])){
         );
         $produtos_carrinho = $select_produtos_carrinho->exe_query("SELECT * FROM carrinho WHERE carrinho.id_loja = :id_loja and carrinho.id_usuario = :id_usuario", $params);
 
+        // echo '<pre>';
+        // print_r($produtos_carrinho);
+        // echo '</pre>';
+
         $insert = new Insert_DB();
 
         $data_pagamento = date('Y-m-d H:i:s', time());
+        // verificar se existe valor para troco
         if(isset($_POST['valor_pago'])){
             $dados = array(
                 ':id_maximo' => $idMaximo,
@@ -88,18 +93,15 @@ if(isset($_SESSION['id_user']) && isset($_GET['refLoja'])){
             $insert->exe_insert("INSERT INTO forma_pagamento (id_pagamento, pagamento, id_loja, id_usuario, qty_compras, data_paga)VALUES(:id_maximo, :forma_pagamento, :id_loja, :id_usuario, :total_compra, :data_pagamento)", $dados);
         }
         // $el->dados_pagamento($dados); //adicionar as inforamções do pagamento na tabela
-
         foreach($produtos_carrinho as $key => $column){
             $produtos[':id_usuario'] = $id_usuario;
             $produtos[':id_loja'] = $id_loja;
-            $produtos[':nome_produto'] = $column['produto'];
-            $produtos[':descricao_produto'] = $column['descricao'];
-            $produtos[':preco_produto'] = $column['preco'];
+            $produtos[':id_produto'] = $column['id_produto'];
             $produtos[':qty'] = $column['qty'];
             $produtos[':valor_total'] = $column['preco_total'];
             $produtos[':dataPedido'] = $dataPedido;
             
-            $el->produtos($produtos); // adicionar o produtos na tabela
+            $el->produtos($produtos); // adicionar o produtos na tabela pedido
         }
             $el->checkout($id_usuario, $id_loja); // finalizar a compra
 

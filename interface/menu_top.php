@@ -1,11 +1,9 @@
 <ul class="ui attached stackable secondary menu border-0 shadow">
     <div class="card-body text-white text-center">
-        <img src="./img/logo_oficial/logo-super.market.png" height="30em" alt="">
-        <span class="alert text-muted font-weight-normal">Compre com mais segurança e rapidez</span>
+        <img src="./img/logo_oficial/logo-super.market.png" height="30em" alt="mercado.bay">
     </div>
     <div class="right menu manu_top">
         <div class="item justify-content-center">
-            <!-- <a class="nav-link font-weight-normal" style="color:#aeaeae;" href="#!/"><strong><i class="fas fa-home"></i> Inicio</strong></a> -->
         </div>
         <div class="item justify-content-center">
             <a id="loginInicialNav" class="nav-link font-weight-normal" href="#!/login"><strong>login</strong> <i class="fas fa-sign-in-alt"></i></a>

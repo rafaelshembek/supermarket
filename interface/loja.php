@@ -158,7 +158,7 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     <div class="item m-2">
         <button class="ui circular green icon button"><i class="bars icon"></i></button>
     </div>
-    <div class="item font-weight-bold text-white">Categorias</div>
+    <div class="h3 item font-weight-bold text-white">Categorias</div>
 </div>
     <!-- mostrar os produtos na pagina -->
     <?php require_once('body_produto.php'); ?>
@@ -187,11 +187,11 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     <!-- =================== -->
     <!-- ===== rodaper ===== -->
     <!-- =================== -->
-    <footer class="ui container-fluid" style="background: #f1f1f1;">
-        <div class="ui container">
+    <footer class="ui container-fluid bg-white">
             <div class="row">
                 <div class="col-md-4">
                     <div class="card-body">
+                        <div class="h4 font-weight-light text-muted">Localidade</div>
                         <div class="ui relaxed divided list text-muted">
                             <?php
                                 if(isset($_GET['refLoja'])){
@@ -250,33 +250,27 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 text-center text-muted">
+                <div class="col-md-4 bg-dark text-center">
                     <div class="card-body m-2 d-flex justify-content-center">
                         <img class="ui small image d-flex align-self-center" src="../../img/logo_oficial/logo-super.market.png" alt="logo marca super.market">
                     </div>
-                    <div class="card-body m-2 text-muted">
+                    <div class="card-body m-2 text-white">
                         <h3 class="font-weight-light">Grupo Empresarial <i class="flag br"></i></h3>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex justify-content-center flex-column text-muted">
-                    <div class="card-body text-center">
+                <div class="col-md-4 d-flex justify-content-center align-content-center flex-column text-muted">
+                    <div class="card-body d-flex align-content-center justify-content-center flex-wrap flex-column">
                         <h5 class="text-center font-weight-light">Plataforma com foco em dar apoio aos setores Varejos e Atacados.</h5>
                         <p class="text-center font-weight-light">Seja Bem Vindo e Junte-se a nós</p>
                     </div>
                 </div>
             </div>
-        </div>
-<div class="row" style="background: #56d465;">
+<div class="row bg-dark">
     <div class="col-md-12">
         <div class="card-body">
                     <div class="content">
-                        <div class="title"><strong class="text-white">&copy 2019 all rights reserved</strong> Todo os direitos reservados</div>
-                        <div class="description">Plataforma de Comercio Online</div>
-                        <a class="ui facebook circular icon button" href="#!">
-                            <i class="facebook icon"></i></a>
-
-                        <a href="#!" class="ui instagram icon circular button">
-                        <i class="instagram icon"></i></a>
+                        <div class="title text-white"><strong class="text-white">&copy 2019 all rights reserved</strong> Todo os direitos reservados</div>
+                        <div class="description text-white">Plataforma de Comercio Online</div>
                     </div>
         </div>
     </div>

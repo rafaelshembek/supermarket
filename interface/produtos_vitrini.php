@@ -12,7 +12,7 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
             <div class="item m-2">
                 <button class="ui circular green icon button"><i class="bars icon"></i></button>
             </div>
-            <div class="item font-weight-bold text-white">Categorias</div>
+            <div class="h2 item font-weight-bold text-white">Categorias</div>
         </div>
         <div class="ui sidebar vertical menu border-0" id="butoes_tags" style="background: #5f1f9c;">
 
@@ -20,12 +20,15 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
         <!-- show produtos body inicial plataforma -->
         <?php if(count($resultDow) != 0): ?>
         <!-- <div class="dimmed pusher"> -->
-            <div class="col-md-12 d-flex justify-content-center align-content-center">
-            <div class="card-body produtos_vitrini bg-white d-flex justify-content-center align-content-center flex-wrap">
+            <div class="card-body">
+                <div class="h3 font-weight-light text-muted">Produtos Variados</div>
+            </div>
+            <div class="col-md-12 d-flex justify-content-center align-content-center flex-wrap">
+            <!-- <div class="card-body produtos_vitrini bg-white d-flex justify-content-center align-content-center flex-wrap"> -->
                 <?php
                     foreach($resultDow as $key => $column){
                     
-                        echo '<div class="card_produtos align-self-center m-1 bg-white" data-tags="'.$column['categoria'].'">';
+                        echo '<div class="card_produtos shadow-lg align-self-center m-1 bg-white" data-tags="'.$column['categoria'].'">';
                             echo '<div class="card-body text-center">';
                                 echo '<p class="font-weight-bold text-muted">'.utf8_decode($column["produto"]).'</p>';
                             echo '</div>';
@@ -42,13 +45,13 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
                             echo '<div class="text-center">';
                                 echo $column["nome_empresa"];
                             echo '</div>';
-                            echo '<div class="d-flex justify-content-center align-content-center flex-wrap mt-1">';
-                                    echo '<a class="ui blue button" style="box-shadow: 0px 5px 12px -5px blue;" href="interface/loja/'.$column["id_loja"].'"><i class="shopping cart icon"></i>Visitar a loja</a>';
+                            echo '<div class="d-flex justify-content-center align-content-center flex-wrap m-2">';
+                                    echo '<a class="ui green button" href="interface/loja/'.$column["id_loja"].'"><i class="shopping cart icon"></i>Visitar a loja</a>';
                             echo '</div>';
                         echo '</div>';
                     }
                 ?>
-            </div>
+            <!-- </div> -->
             </div>
         <!-- </div> -->
         <?php else: ?>

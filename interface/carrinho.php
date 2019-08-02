@@ -9,7 +9,7 @@
         require_once('../funcoes/fu_calc.php');
         require_once('../funcoes/fu_loja.php');
         require_once('../funcoes/fu_usuario.php');
-        // require_once('../funcoes/fu_carrinho_temp.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR" ng-app="carrinhoApp">
@@ -57,6 +57,7 @@
                     ':id_maximo' => $idMaximo,
                     ':id_loja' => $id_loja,
                     ':id_online' => $id_online,
+                    ':id_produto' => $_POST['id_produto'],
                     ':produto' => $_POST['nome_produto'],
                     ':descricao' => $_POST['descricao'],
                     ':categoria' => $_POST['categoria'],
@@ -64,7 +65,7 @@
                     ':preco' => $_POST['preco'],
                     ':preco_total' => $multiplic
                 );
-                $insert->exe_insert("INSERT INTO carrinho VALUES(:id_maximo, :id_loja, :id_online, :produto, :descricao, :categoria, :qty, :preco, :preco_total)", $param);
+                $insert->exe_insert("INSERT INTO carrinho VALUES(:id_maximo, :id_loja, :id_online, :id_produto, :produto, :descricao, :categoria, :qty, :preco, :preco_total)", $param);
                 // evitar que o usuario atualizar apagina e acaba adicinando produto duplicado
                 header('Location: ../carrinho/'. $_GET['refLoja']);
             }
