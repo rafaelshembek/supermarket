@@ -24,12 +24,18 @@
 .card_produtos{
     border-radius: 10px;
     width: 200px;
+    margin: 10px;
+}
+.card_produto_more_bay{
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
 }
 .preco{
     position: absolute;
     padding: 10px;
     border-radius: 3px;
-    background: #e91822;
+    background: #eecb05;
     color: #fff;
     margin-top: -10em;
     margin-left: 10em;
