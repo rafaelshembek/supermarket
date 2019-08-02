@@ -55,7 +55,7 @@ class GetRelatorioCompras{
             ':cliente' => $cliente,
             ':data_compra' => $data
         );
-        return $return = $select->exe_query("SELECT * FROM pedido LEFT JOIN cadastro ON pedido.id_usuario = cadastro.idcadastro where pedido.id_usuario = :cliente AND pedido.data_compra = :data_compra", $mArray);
+        return $return = $select->exe_query("SELECT * FROM pedido LEFT JOIN produto ON pedido.id_produto = produto.id_produto where pedido.id_usuario = :cliente AND pedido.data_compra = :data_compra", $mArray);
     }
 }
 ?>
