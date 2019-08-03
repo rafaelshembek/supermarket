@@ -1,8 +1,8 @@
-<div class="row">
     <div class="card-body" style="background: #fafafa;">
         <div class="h3 font-weight-light text-muted ml-5">Produtos Variados</div>
     </div>
-    <div class="col-md-12 produtos_vitrini bg-white d-flex justify-content-center align-content-center flex-wrap">
+<div class="row" style="background: #fafafa;">
+    <div class="col-md-12 produtos_vitrini d-flex justify-content-center align-content-center flex-wrap">
         <?php
             require_once('../class/Select_DB.php');
                     $id_login = isset($_SESSION['id_user']) ? $_SESSION['id_user'] : "";//usuario online
@@ -21,8 +21,8 @@
                             $preco = $value['preco'];
                             
                         echo '<form class="ui form shadow-lg align-self-start" id="produto_loja" data-tags="'.$categoria.'" method="post" action="../carrinho/'.$_GET['refLoja'].'">';
-                            echo '<div class="font-weight-light produto m-1">'.ucfirst(utf8_decode($produto)).'</div>';
-                            echo '<div class="icon_float"><i class="fas fa-store"></i></div>';
+                            echo '<div class="font-weight-bold produto m-1">'.ucfirst(utf8_decode($produto)).'</div>';
+                            // echo '<div class="icon_float"><i class="fas fa-store"></i></div>';
                             echo '<div class="img_produtos">';
                             if($img){
                                 echo '<img height="100" src="../../img/produtos/'.$img.'">';
@@ -49,7 +49,7 @@
                                         $valor = number_format($preco, 2, '.', ',');    
                                     echo 'R$'.$valor;
                                     echo '</div>';
-                                echo '<div class="ui green button">';
+                                echo '<div class="ui orange button">';
                                     echo '<i class="shopping cart icon"></i>';
                                 echo '</div>';
                                 echo '</button>';

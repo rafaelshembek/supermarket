@@ -107,10 +107,10 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
         </section>
     <?php return; ?>
     <?php elseif($loja->getTipo_conta() == 'empresa'):?>
-    <div class="ui attached stackable secondary menu bg-white shadow">
-        <!-- <div class="item justify-content-center">
-            <div class="h3 font-weight-light text-muted"><i class="fas fa-store"></i> Nome de sua loja</div>
-        </div> -->
+    <div class="ui attached stackable secondary menu border-0 bg-white">
+        <div class="item justify-content-center">
+            <div class="ui massive label" style="color: #cacaca; background: transparent;"><i class="fas fa-store"></i> <?php echo $loja->getNome_loja();?></div>
+        </div>
         <div class="right menu">
             <div class="item justify-content-center">
                 <?php
@@ -118,26 +118,26 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
                     if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
                         if($total == 0)
                         {   
-                            echo '<a  class="nav-link" href="../carrinho/'.$_GET['refLoja'].'">';
+                            echo '<a  class="ui big label text-muted" style="background: transparent;" href="../carrinho/'.$_GET['refLoja'].'">';
                             echo '<i class="cart icon"></i>';
-                            echo 'Carrinho de Compras';
-                            echo '<strong class="m-3 font-weight-bold" style="font-size: 30px;">'.$resultado.'</strong>';
+                            // echo 'Carrinho de Compras';
+                            echo '<strong class="font-weight-bold" style="font-size: 30px;">'.$resultado.'</strong>';
                             echo '</a>';
                         }else
                         {
 
-                            echo '<a  class="nav-link" href="../carrinho/'.$_GET['refLoja'].'">';
+                            echo '<a  class="ui big label text-muted" style="background: transparent;" href="../carrinho/'.$_GET['refLoja'].'">';
                             echo '<i class="cart icon"></i>';
-                                echo '<div class="title">Carrinho de Compras</div>';
-                                echo '<div class="description">'.$resultado.'</div>';
+                                // echo 'Carrinho de Compras';
+                                echo '<strong class="font-weight-bold" style="font-size: 30px;">'.$resultado.'</strong>';
                             echo '</a>';
                         }
                     }else if(!isset($_SESSION['id_user']) && isset($_GET['refLoja'])){
                         
-                        echo '<a  class="ui steps" href="../carrinho/'.$_GET['refLoja'].'">';
+                        echo '<a  class="ui big label text-muted" style="background: transparent;" href="../carrinho/'.$_GET['refLoja'].'">';
                         echo '<i class="cart icon"></i>';
-                            echo '<div class="title">Carrinho de Compras</div>';
-                            echo '<div class="description">'.$resultado.'</div>';
+                            // echo '<div class="title">Carrinho de Compras</div>';
+                            echo '<strong class="font-weight-bold" style="font-size: 30px;">'.$resultado.'</strong>';
                         echo '</a>';
                     }
                 ?>
@@ -147,18 +147,14 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
     </div>
     <!--=========================-->
     <!--=========================-->
-    <header>
-        <div id="sessao_perfil" class="carousel slide" data-ride="carousel">
-                    <!-- informações banner aquir -->
-            </div>
-        </div>
-    </header>
     <!-- barra de categoria -->
-<div id="btnbarsLoja" class="ui attached secondary stackabled menu border-0" style="background: #4AC767; width: 100%">
-    <div class="item m-2">
-        <button class="ui circular green icon button"><i class="bars icon"></i></button>
+<div id="btnbarsLoja" class="ui attached secondary stackabled menu border-0">
+    <div class="item">
+        <button class="ui circular orange icon button"><i class="bars icon"></i></button>
     </div>
-    <div class="h3 item font-weight-bold text-white">Categorias</div>
+    <div class="item">
+        <div class="ui big label font-weight-bold" style="background: transparent; color: orange;">Categorias</div>
+    </div>
 </div>
     <!-- mostrar os produtos na pagina -->
     <?php require_once('body_produto.php'); ?>

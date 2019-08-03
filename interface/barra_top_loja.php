@@ -30,6 +30,9 @@
                         echo '<img src="../../img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt="mercado bay">';
                     echo '</div>';
                     echo '<div class="right menu">';
+                        // echo '<div class="item">';
+                        //     echo '<img class="ui avatar image border" src="../../assets/avatar_perfil/padrao.jpg" alt="nome usuario">';
+                        // echo '</div>';
                         echo '<div class="item justify-content-center">';
                             echo '<a class="nav-link m-2 text-white" href="../../"><strong>inicio</strong></a>';
                         echo '</div>';
