@@ -8,11 +8,9 @@
         }
     ?>
     <?php require_once('interface/barra_top.php'); ?>
-    <?php
-        //  require_once('interface/second_menu_top.php');
-     ?>
     <?php require_once('interface/body.php'); ?>
         <!-- <section ng-view></section> -->
+    <?php require_once('interface/barra_information.php'); ?>
     <?php require_once('interface/tagsbody.php'); ?>
     <?php 
         require_once('interface/produtos_vitrini.php'); 
