@@ -67,6 +67,20 @@ if(isset($_SESSION['id_user']) && isset($_GET['refLoja'])){
 
         $insert = new Insert_DB();
 
+        $tipo_pagamento = $_POST['optionPagamento'];
+
+        switch ($tipo_pagamento) {
+            case 'Cartao':
+                # code...
+                $forma_pagamento = 'Cartão';
+                break;
+            
+            case 'Dinheiro':
+                # code...
+                $forma_pagamento = 'Dinheiro';
+                break;
+        }
+
         $data_pagamento = date('Y-m-d H:i:s', time());
         // verificar se existe valor para troco
         if(isset($_POST['valor_pago'])){
@@ -76,10 +90,11 @@ if(isset($_SESSION['id_user']) && isset($_GET['refLoja'])){
                 ':total_compra' => $total_compras,
                 ':id_loja' => $id_loja,
                 ':id_usuario' => $id_usuario,
+                ':modalidade_pagamento' => $forma_pagamento,
                 ':data_pagamento' => $data_pagamento,
                 ':valor_paga' => $_POST['valor_pago']
             );
-            $insert->exe_insert("INSERT INTO forma_pagamento (id_pagamento, pagamento, id_loja, id_usuario, qty_compras, data_paga, valor_pago)VALUES(:id_maximo, :forma_pagamento, :id_loja, :id_usuario, :total_compra, :data_pagamento, :valor_paga)", $dados);
+            $insert->exe_insert("INSERT INTO forma_pagamento (id_pagamento, pagamento, id_loja, id_usuario, qty_compras, modalidade_pagamento, data_paga, valor_pago)VALUES(:id_maximo, :forma_pagamento, :id_loja, :id_usuario, :total_compra, :modalidade_pagamento, :data_pagamento, :valor_paga)", $dados);
         }else{
             $dados = array(
                 ':id_maximo' => $idMaximo,
@@ -87,10 +102,11 @@ if(isset($_SESSION['id_user']) && isset($_GET['refLoja'])){
                 ':total_compra' => $total_compras,
                 ':id_loja' => $id_loja,
                 ':id_usuario' => $id_usuario,
+                ':modalidade_pagamento' => $forma_pagamento,
                 ':data_pagamento' => $data_pagamento
             );
             
-            $insert->exe_insert("INSERT INTO forma_pagamento (id_pagamento, pagamento, id_loja, id_usuario, qty_compras, data_paga)VALUES(:id_maximo, :forma_pagamento, :id_loja, :id_usuario, :total_compra, :data_pagamento)", $dados);
+            $insert->exe_insert("INSERT INTO forma_pagamento (id_pagamento, pagamento, id_loja, id_usuario, qty_compras, modalidade_pagamento, data_paga)VALUES(:id_maximo, :forma_pagamento, :id_loja, :id_usuario, :total_compra, :modalidade_pagamento, :data_pagamento)", $dados);
         }
         // $el->dados_pagamento($dados); //adicionar as inforamções do pagamento na tabela
         foreach($produtos_carrinho as $key => $column){

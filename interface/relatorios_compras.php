@@ -17,6 +17,7 @@ if(isset($_SESSION['id_user']) && isset($_GET['cliente']) && isset($_GET['data']
         foreach($getdados_moradia as $column){
             $valor_pagor = $column['valor_pago'];
             $forma_pagamento = $column['pagamento'];
+            $tipo_pagamento = $column['modalidade_pagamento'];
         }
         foreach($resultMoradiaCliente as $column){
             $rua = $column['rua_moradia'];
@@ -70,30 +71,28 @@ if(isset($_SESSION['id_user']) && isset($_GET['cliente']) && isset($_GET['data']
             </div>
             </div>
         </div>
-        <div class="row text-muted">
+        <div class="row">
             <div class="col-md-6">
                 <div class="card-body d-flex justify-content-center align-content-center">
                     <div class="ui border-0 vertical steps">
                         <div class="step">
                             <div class="content">
-                                <div class="title">Cliente:</div>
+                                <div class="title font-weight-light">Cliente:</div>
                                 <div class="description"><strong><?php echo $nome_cliente; ?></strong></div>
                             </div>
                         </div>
                         <div class="step">
                             <div class="content">
-                                <div class="title">Total da Compras:</div>
+                                <div class="title font-weight-light">Total da Compras:</div>
                                 <div class="description"><strong>R$<?php echo number_format(array_sum($total_compras), 2, '.', ','); ?></strong></div>
                             </div>
                         </div>
                         <div class="step">
                             <div class="content">
-                                <div class="title">Troco:</div>
+                                <div class="title font-weight-light">Troco:</div>
                                 <?php
                                 // echo $valor_pagor;
                                 if($valor_pagor == '0.00'){
-                                    // $a = array_sum($total_compras);
-                                    // echo '<div class="description"><strong>R$0.00</strong></div>';
                                     echo '<div class="description"><strong>Sem troco</strong></div>';
                                     
                                 }else{
@@ -105,8 +104,28 @@ if(isset($_SESSION['id_user']) && isset($_GET['cliente']) && isset($_GET['data']
                         </div>
                         <div class="step">
                             <div class="content">
-                                <div class="title">Pagamento</div>
+                                <div class="title font-weight-light">Pagamento</div>
                                 <div class="description"><strong><?php echo $forma_pagamento; ?></strong></div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content">
+                                <div class="title font-weight-light">Modalidade do Pagamento</div>
+                                <div class="description"><strong><?php echo $tipo_pagamento; ?></strong></div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content">
+                                <div class="title font-weight-light">Valor receber no local da entregar</div>
+                                <?php 
+                                    if($valor_pagor == '0.00'){
+                                        echo '<div class="description"><strong>R$'.number_format(array_sum($total_compras), 2, '.', ',').'</strong></div>';
+                                        
+                                    }else{
+                                        echo '<div class="description"><strong>R$'.number_format($valor_pagor,2).'</strong></div>';
+                                    }
+                                ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,7 +179,7 @@ if(isset($_SESSION['id_user']) && isset($_GET['cliente']) && isset($_GET['data']
             <div class="col-md-12">
                 <!-- tabela -->
                 <div class="card-body">
-                    <table class="ui single line table">
+                    <table class="ui single line table tablet stackable">
                             <!-- header da tabela -->
                         <thead>
                             <tr>
