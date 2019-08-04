@@ -291,7 +291,7 @@
             <div class="field text-center">
                 <div class="ui toggle checkbox">
                     <input type="checkbox" name="public" ng-model="pagamento_yes">
-                    <label class="ui label" style="background: #fff;">Pagamento necessita de troco ?</label>
+                    <label class="ui label font-weight-normal" style="background: #fff;">Pagamento necessita de troco ?</label>
                 </div>
             </div>
             <div class="field" ng-if="pagamento_yes">
@@ -299,18 +299,30 @@
                         <input type="number" name="valor_pago" placeholder="R$0.00">
             </div>
             <div class="field">
+                    <label class="ui label" style="background: #fff;">Forma de Pagamento</label>
+                    <select name="optionPagamento" id="optionPagamento">
+                        <option value="Cartao">Cartão</option>
+                        <option value="Dinheiro">Dinheiro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <div class="card-body">
                     <button class="ui green button font-weight-light" type="submit"><i class="shopping basket icon"></i> Finalizar Pagamento</button>
+                </div>
+            </div>
+            <div class="field">
+                <div class="card-body">
+                    <?php
+                        $resultado = isset($_SESSION['id_user']) ? '<i class="cart icon"></i> Continuar Comprando' : '<i class="fas fa-shopping-bag"></i> Voltar para loja';
+                        echo '<a class="ui orange button" href="../loja/'.$_GET['refLoja'].'">'.$resultado.'</a>';
+                    ?>
+                </div>
             </div>
         </form>
         <?php endif; ?>
     </div>
     <?php endif;?>
-    <div class="card-body">
-        <?php
-            $resultado = isset($_SESSION['id_user']) ? '<i class="cart icon"></i> Continuar Comprando' : '<i class="fas fa-shopping-bag"></i> Voltar para loja';
-            echo '<a class="ui button" style="background: transparent;" href="../loja/'.$_GET['refLoja'].'">'.$resultado.'</a>';
-        ?>
-    </div>
 </div>
 </div>
 </section>
