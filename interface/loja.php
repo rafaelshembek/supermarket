@@ -74,7 +74,7 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
 <section class="dimmer pusher">
 
     <input id="id_loja" type="hidden" value="<?php echo $_GET['refLoja']?>">
-    <?php 
+    <?php
         if(isset($_SESSION['id_user'])){
             require_once('barra_top_loja.php');
         }else{
