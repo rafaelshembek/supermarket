@@ -5,4 +5,4 @@ import { searchInput, showModal } from "../../lib/search.js";
 searchInput();
 showModal();
 // ==========================
-modalLogin();
+modalLogin(); //modal input login
