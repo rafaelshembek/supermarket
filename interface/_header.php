@@ -53,3 +53,6 @@
   };
 </script>
 <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+<div class="ui sidebar vertical menu border-0" id="butoes_tags" style="background: #1db110;">
+
+</div>

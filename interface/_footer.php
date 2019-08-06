@@ -5,8 +5,11 @@
             <div class="col-md-8 footer-side-left d-flex justify-content-center align-content-center flex-wrap">
                 
                 <div class="card-body text-white">
-                    <img src="./img/logo_oficial/logo-small-top-page-cadasttro.png" width="200em" alt="mercado bay" srcset="">
+                    <img class="border p-2" src="./img/logo_oficial/logo-small-top-page-cadasttro.png" width="200em" alt="mercado bay" srcset="">
                     <div class="h1 font-weight-light text-white">Grupo Empresarial</div>
+                    <div class="h5">Escritorio</div>
+                    <div>Contato: (99) 991259570</div>
+                    <div>Email: agenciaatech@gmail.com</div>
                 </div>
                 <div class="card-body text-white text-center">
                     <!-- <p class="font-weight-light">Total de <strong>empresas</strong></p> -->
@@ -19,16 +22,17 @@
             </div>
             <div class="col-md-4 footer-site-right d-flex justify-content-center align-content-center flex-column flex-wrap">
                 <div class="card-body d-flex justify-content-center align-content-center flex-column">
-                    <p class="text-center text-white font-weight-light">Plataforma com foco em apoio aos setores varejos e atacados.</p>
+                    <p class="ui small green label font-weight-bold">Plataforma com foco em apoio aos setores varejos e atacados.</p>
                 </div>
                 <div class="card-body text-center d-flex justify-content-center align-content-center flex-column flex-wrap">
-                    <p class="text-center text-white">Seja Bem Vindo e Junte-se a nós</p>
-                    <a class="ui button btn-sing-in-footer" href="interface/signup.php"><i class="sign-in icon"></i> Cadastre-se</a>
+                    <div class="h2 text-center text-muted">Vai vender!</div>
+                    <p class="text-center text-muted">Teste nossa plataforma por <strong class="ui yellow label">30 dias</strong></p>
+                    <a class="ui green button" href="interface/signup.php"><i class="sign-in icon"></i> Cadastre-se</a>
                 </div>
                 <div class="card-body text-center m-0 d-flex justify-content-center align-content-center flex-column">
                     <!-- Endereço plataforma -->
-                    <p class="font-weight-light text-center text-light m-1">Escritorio de Desenvolvimento</p>
-                    <p class="font-weight-bold text-center text-white">Itinga - Ma <i class="br flag"></i></p>           
+                    <p class="font-weight-light text-center text-muted m-1">Escritorio de Desenvolvimento</p>
+                    <p class="font-weight-bold text-center text-muted">Itinga - Ma <i class="br flag"></i></p>           
                 </div>
             </div>
         </div>

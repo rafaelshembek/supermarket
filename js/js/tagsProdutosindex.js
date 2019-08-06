@@ -17,7 +17,7 @@ $(function(){
             }
         })
         // botão todos os produtos
-        $('<h5/>', {
+        $('<a/>', {
             text: 'Todos os produtos',
             class: 'item text-white font-weight-bold',
             click: function(e){

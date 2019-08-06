@@ -1,15 +1,15 @@
 <?php if(!isset($_SESSION['id_user'])): ?>
-<ul class="ui attached stackable secondary menu border-0 shadow" style="background: #095CE8;">
+<ul class="ui attached stackable secondary menu border-0 shadow" style="background: #fff;">
     <div class="card-body text-white text-center">
-        <img src="./img/logo_oficial/logo-small-top-page-cadastro.png" height="30em" alt="mercado.bay">
+        <img src="./img/logo_oficial/logo-super.market.png" height="30em" alt="mercado.bay">
     </div>
     <div class="right menu manu_top">
         <div class="item justify-content-center">
         </div>
         <div class="item justify-content-center">
-            <a id="loginInicialNav" class="nav-link text-white font-weight-normal" href="#!/login"><strong>login</strong> <i class="fas fa-sign-in-alt"></i></a>
+            <a id="loginInicialNav" class="nav-link text-muted font-weight-normal" href="#!/login"><strong>login</strong> <i class="fas fa-sign-in-alt"></i></a>
             <!-- modal login -->
-            <div class="shadow" id="modalLoginNav">
+            <div class="shadow-lg" id="modalLoginNav">
                     <div class="card-body text-center">
                         <img src="./img/logo_oficial/logo-super.market.png" width="100em" alt="mercado bay">
                     </div>
@@ -41,10 +41,10 @@
             </div>
         </div>
         <div class="item justify-content-center">
-            <a class="ui button" style="background: #ff9b83; color: #fff; box-shadow: 0px 5px 10px -5px #ff9b83; border-radius: 30px;" href="interface/signup">cadastre-se</a>
+            <a class="ui yellow button" style="color: #fff; box-shadow: 0px 5px 10px -5px yellow; border-radius: 30px;" href="interface/signup">cadastre-se</a>
         </div>
         <div class="item justify-content-center">
-            <a class="nav-link text-white font-weight-normal" href="interface/esqueceu_senha"><strong>esqueceu a senha?</strong></a>
+            <a class="nav-link text-muted font-weight-normal" href="interface/esqueceu_senha"><strong>esqueceu a senha?</strong></a>
         </div>
     </div>
 </ul>

@@ -1,12 +1,6 @@
 .footer-side-left{
-    background: #2F2C52;
+    background: #1b1b17;
 }
 .footer-site-right{
-    background: #464784;
-}
-.btn-sing-in-footer{
-    background: yellow !important;
-    border-radius: 30px !important;
-    color: rgb(224, 116, 15) !important;
-    box-shadow: 0px 7px 12px -5px yellow !important;
+    background: #ffffff;
 }

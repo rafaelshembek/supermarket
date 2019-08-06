@@ -14,9 +14,6 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
             </div>
             <div class="h2 item font-weight-bold text-white">Categorias</div>
         </div>
-        <div class="ui sidebar vertical menu border-0" id="butoes_tags" style="background: #5f1f9c;">
-
-        </div>
         <!-- show produtos body inicial plataforma -->
         <?php if(count($resultDow) != 0): ?>
         <!-- <div class="dimmed pusher"> -->
@@ -24,7 +21,7 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
                 <div class="h3 font-weight-light text-muted">Produtos Variados</div>
             </div>
             <div class="col-md-12 d-flex justify-content-center align-content-center flex-wrap">
-            <!-- <div class="card-body produtos_vitrini bg-white d-flex justify-content-center align-content-center flex-wrap"> -->
+
                 <?php
                     foreach($resultDow as $key => $column){
                     
@@ -51,7 +48,7 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
                         echo '</div>';
                     }
                 ?>
-            <!-- </div> -->
+
             </div>
         <!-- </div> -->
         <?php else: ?>

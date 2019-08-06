@@ -111,3 +111,16 @@ div.box_divs_body{
     height:50px;
     border-radius: 100%;
 }
+.divs_icons{
+    background: rgb(229, 245, 4);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 100%;
+}
+.el{
+  background:  #1db110;
+}
