@@ -15,8 +15,10 @@ class Cl_add_dados
     private $estados;
     private $cidade;
     private $referencia;
+    private $latitude;
+    private $longitude;
 
-    public function __construct($id_maximo, $rua, $numero, $bairro, $estados, $cidade, $id_user, $referencia)
+    public function __construct($id_maximo, $rua, $numero, $bairro, $estados, $cidade, $id_user, $referencia, $latitude, $longitude)
     {
         $this->setId($id_maximo);
         $this->setRua($rua);
@@ -26,6 +28,8 @@ class Cl_add_dados
         $this->setCidade($cidade);
         $this->setId_user($id_user);
         $this->setReferencia($referencia);
+        $this->setLatitude($latitude);
+        $this->setLongitude($longitude);
     }
     
     public function add_Dados(){
@@ -40,9 +44,11 @@ class Cl_add_dados
             ':Estado' => $this->getEstados(),
             ':Cidade' => $this->getCidade(),
             ':Id_user' => $this->getId_user(),
-            ':Referencia' => $this->getReferencia()
+            ':Referencia' => $this->getReferencia(),
+            ':latitude' => $this->getLatitude(),
+            ':longitude' => $this->getLongitude()
         );
-        $insert->exe_insert("INSERT INTO dados_usuario (id_dados_contato, id_user_online, rua_moradia, numero_moradia, bairro_moradia, cidade_moradia, estado_moradia, referencia_moradia)VALUES(:Id, :Id_user, :Rua, :Numero, :Bairro, :Cidade, :Estado, :Referencia)", $params);
+        $insert->exe_insert("INSERT INTO dados_usuario (id_dados_contato, id_user_online, rua_moradia, numero_moradia, bairro_moradia, cidade_moradia, estado_moradia, referencia_moradia, latitude_map, longitude_map)VALUES(:Id, :Id_user, :Rua, :Numero, :Bairro, :Cidade, :Estado, :Referencia, :latitude, :longitude)", $params);
     }
     
     public function getId()
@@ -108,5 +114,21 @@ class Cl_add_dados
     public function setId_user($id_user)
     {
         $this->id_user = $id_user;
+    } 
+    public function getLatitude()
+    {
+        return $this->latitude;
+    }
+    public function setLatitude($latitude)
+    {
+        $this->latitude = $latitude;
+    } 
+    public function getLongitude()
+    {
+        return $this->longitude;
+    }
+    public function setLongitude($longitude)
+    {
+        $this->longitude = $longitude;
     }
 }

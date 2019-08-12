@@ -45,14 +45,14 @@ section.barra_top_loja{
     padding: 3px 1em;
 }
 /*sessao_perfil banner da loja*/
-div#sessao_perfil{
-    background-image: url('../img/logo_oficial/bannerpadrao.jpg');
+div#bg-img-map{
+    background-image: url('../img/logo_oficial/map.jpg') !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
-    background-color: #272727af;
-    height: 500px;
+    /* background-color: #272727af; */
+    height:400px;
 }
 section.loja_perfil{
     display: flex;

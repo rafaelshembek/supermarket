@@ -1,12 +1,3 @@
-<?php 
-    // session_start();
-    // require_once('../logica/infor_dados.php');
-    // if(isset($_SESSION['id_user'])){
-    //     $id_empresa = $_SESSION['id_user'];
-    //     $infor_dados = new \Dados_Moradias\Dados();
-    //     $infor_dados->infor_dados($id_empresa);
-    // }
-?>
 <div class="row d-flex justify-content-center">
     <div class="col-md-12">
         <div class="card-body">
@@ -18,7 +9,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card-body">
-                    <form class="ui form" action="../logica/logica_dados_usuario.php" method="post">
+                    <form id="formCadastrarDados" ng-controller="elCtrl" class="ui form" action="../logica/logica_dados_usuario.php" method="post">
+                        <input type="hidden" name="latitude" id="latitude">
+                        <input type="hidden" name="longitude" id="longitude">
                         <div class="three eguals width fields">
                             <div class="field">
                                 <label for="rua_moradia">Rua:</label>
@@ -47,7 +40,7 @@
                                 <input type="text" name="referencia_moradia" id="referencia_moradia" placeholder="Referencia ex: torre">
                             </div>
                         </div>
-                        <div class="field"><button class="ui blue button" type="submit">Salvar</button></div>
+                        <div class="field"><button class="ui blue button">Salvar</button></div>
                     </form>
                 </div>
             </div>

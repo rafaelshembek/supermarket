@@ -20,7 +20,7 @@
         ':email' => $email,
         ':senha' => $senha_scrypt
     );
-
+    // faz a buscar dos dados de login que tem no banco de dado
     $el = $select->exe_query("SELECT * FROM cadastro WHERE email = :email AND senha = :senha", $param);
     foreach($el as $values){
         $_SESSION['id_user'] = $values['idcadastro'];
@@ -28,6 +28,7 @@
         $_SESSION['username'] = $values['username'];
         $email = $values['email'];
     }
+
         echo '<p>Login acessando com sucesso</p>';
         echo '<a href="../index.php?username="'.$username.'>voltar</a>';
         header('Location:../?'.$_SESSION['username']);

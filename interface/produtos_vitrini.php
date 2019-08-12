@@ -18,10 +18,10 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
         <?php if(count($resultDow) != 0): ?>
         <!-- <div class="dimmed pusher"> -->
             <div class="card-body">
-                <div class="h3 font-weight-light text-muted">Produtos Variados</div>
+                <div class="ui big label font-weight-bold">Produtos Variados</div>
             </div>
             <div class="col-md-12 d-flex justify-content-center align-content-center flex-wrap">
-
+            <!-- <div class="ui three stackable cards"> -->
                 <?php
                     foreach($resultDow as $key => $column){
                     
@@ -48,7 +48,7 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
                         echo '</div>';
                     }
                 ?>
-
+            <!-- </div> -->
             </div>
         <!-- </div> -->
         <?php else: ?>

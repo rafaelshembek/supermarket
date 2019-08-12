@@ -107,7 +107,22 @@ if(isset($_SESSION['id_user']) || isset($_GET['refLoja'])){
         </section>
     <?php return; ?>
     <?php elseif($loja->getTipo_conta() == 'empresa'):?>
-    <div class="ui attached stackable secondary menu border-0 bg-white">
+    <div id="bg-img-map" class="d-flex justify-content-center align-content-center flex-wrap flex-column">
+        <div class="ui card shadow-lg">
+            <div class="content">
+                <div class="center aligned header">Nome do Supermercado</div>
+                <div class="center aligned description">
+                    <p>Descrição do supermercado</p>
+                </div>
+            </div>
+            <div class="extra content">
+                <div class="center aligned author">
+                    <img class="ui avatar image" src="../../assets/avatar_perfil/padrao.jpg" alt="nome do supermercado">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui attached stackable secondary menu border-0">
         <div class="item justify-content-center">
             <div class="ui massive label" style="color: #cacaca; background: transparent;"><i class="fas fa-store"></i> <?php echo $loja->getNome_loja();?></div>
         </div>

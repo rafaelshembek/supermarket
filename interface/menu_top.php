@@ -1,13 +1,13 @@
 <?php if(!isset($_SESSION['id_user'])): ?>
-<ul class="ui attached stackable secondary menu border-0 shadow" style="background: #fff;">
-    <div class="card-body text-white text-center">
-        <img src="./img/logo_oficial/logo-super.market.png" height="30em" alt="mercado.bay">
+<ul class="ui attached stackable secondary menu border-0" style="background: #fff;">
+    <div class="card-body bg-warning">
+        <img src="./img/logo_oficial/logo-small-top-page-cadastro.png" height="30em" alt="mercado.bay">
     </div>
-    <div class="right menu manu_top">
+    <div class="right stackable attached secondary menu manu_top">
         <div class="item justify-content-center">
         </div>
         <div class="item justify-content-center">
-            <a id="loginInicialNav" class="nav-link text-muted font-weight-normal" href="#!/login"><strong>login</strong> <i class="fas fa-sign-in-alt"></i></a>
+        
             <!-- modal login -->
             <div class="shadow-lg" id="modalLoginNav">
                     <div class="card-body text-center">
@@ -41,10 +41,11 @@
             </div>
         </div>
         <div class="item justify-content-center">
-            <a class="ui yellow button" style="color: #fff; box-shadow: 0px 5px 10px -5px yellow; border-radius: 30px;" href="interface/signup">cadastre-se</a>
-        </div>
-        <div class="item justify-content-center">
-            <a class="nav-link text-muted font-weight-normal" href="interface/esqueceu_senha"><strong>esqueceu a senha?</strong></a>
+            <div class="ui buttons">
+                <a id="loginInicialNav" class="ui yellow button text-white font-weight-bold" style="box-shadow: 0px 7px 7px -5px yellow;" href="#!/login"><strong>login</strong>
+                <a class="ui orange button font-weight-bold" style="box-shadow: 0px 7px 7px -5px orange;" href="interface/signup">cadastre-se</a>
+                <a class="ui button font-weight-bold" href="interface/esqueceu_senha"><strong>esqueceu a senha?</strong></a>
+            </div>
         </div>
     </div>
 </ul>

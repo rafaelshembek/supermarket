@@ -20,6 +20,8 @@ $cidade_moradia = filter_input(INPUT_POST, 'cidade_moradia', FILTER_SANITIZE_STR
 $estado_moradia = filter_input(INPUT_POST, 'estado_moradia', FILTER_SANITIZE_STRING);
 $id_online = $_SESSION['id_user']; //id da session online
 $referencia_moradia = filter_input(INPUT_POST, 'referencia_moradia', FILTER_SANITIZE_STRING);
+$latitude = $_POST['latitude'];
+$longitude = $_POST['longitude'];
 // echo $id_online;
 if($rua_moradia == '' || $numero_moradia == '' || $bairro_moradia == '' || $cidade_moradia == '' || $estado_moradia == '' || $referencia_moradia == ''){
     echo '<div class="ui info message">';
@@ -51,7 +53,7 @@ if($el == null){
      * se o resultado retorna $el == null sem dados
      * sera adicionar na tabela logo abaixo 
      *  */
-    $insert_dados = new \Dados_pessoais\Cl_add_dados($idMaximo, $rua_moradia, $numero_moradia, $bairro_moradia, $estado_moradia, $cidade_moradia, $id_online, $referencia_moradia);
+    $insert_dados = new \Dados_pessoais\Cl_add_dados($idMaximo, $rua_moradia, $numero_moradia, $bairro_moradia, $estado_moradia, $cidade_moradia, $id_online, $referencia_moradia, $latitude, $longitude);
     $insert_dados->add_Dados();
     echo '<p>ok....</p>';
     // echo '<a href=" ../interface/PainelUsuario.php">voltar</a>';

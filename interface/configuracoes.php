@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="../Semantic-UI-CSS-master/semantic.min.css">
     <link rel="stylesheet" href="../css/configuracoes.css">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css">
@@ -218,13 +218,15 @@
                             </div>
                             </div>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm" ng-controller="configuracoesCtrl">
                             <div class="card-body">
-                            <form class="ui form" id="formAddDadosPessoais" action="../logica/trocar_dados.php" method="post">
+                            <form class="ui form" id="formAddDadosPessoais" action="../logica/logica_dados_usuario.php" method="post">
+                            <input type="hidden" name="latitude" id="latitude">
+                            <input type="hidden" name="longitude" id="longitude">
                                 <div class="field">
-                                    <input type="hidden" name="id_user" id="id_user" value="<?php echo $id_empresa; ?>">
+                                    <!-- <input type="hidden" name="id_user" id="id_user" value="<?php echo $id_empresa; ?>">
                                     <input type="hidden" name="id_loja" id="id_loja" value="<?php echo $_SESSION['id_user']?>">
-                                    <input type="hidden" name="id_dados" id="id_dados" value="<?php echo $select_dados->getId(); ?>">
+                                    <input type="hidden" name="id_dados" id="id_dados" value="<?php echo $select_dados->getId(); ?>"> -->
                                 </div>
                                 
                                 <div class="two fields">
@@ -232,41 +234,41 @@
                                         <label for="rua">
                                             Nome da Rua
                                         </label>
-                                        <input type="text" name="rua" id="rua" class="form-control-sm" placeholder="Sua rua">
+                                        <input type="text" name="rua_moradia" id="rua_moradia" class="form-control-sm" placeholder="Sua rua">
                                         
                                     </div>
                                     <div class="field">
                                         <label for="numero">
                                             Numº Casa / Apartamento
                                         </label>
-                                        <input type="number" min="0" max="1000" name="numero" id="numero" class="form-control-sm" placeholder="Nº">
+                                        <input type="number" min="0" name="numero_moradia" id="numero_moradia" class="form-control-sm" placeholder="Nº">
                                     </div>
                                 </div>
                                 <div class="field">
                                     <label for="bairro">
                                         Seu Bairro
                                     </label>
-                                    <input type="text" name="bairro" id="bairro" class="form-control-sm" placeholder="Seu bairro">
+                                    <input type="text" name="bairro_moradia" id="bairro_moradia" class="form-control-sm" placeholder="Seu bairro">
                                 </div>
                                 <div class="two fields">
                                     <div class="field">
                                         <label for="cidade">
                                             Cidade
                                         </label>
-                                        <input type="text" name="cidade" id="cidade" class="form-control-sm" placeholder="Cidade">
+                                        <input type="text" name="cidade_moradia" id="cidade_moradia" class="form-control-sm" placeholder="Cidade">
                                     </div>
                                     <div class="field">
                                         <label for="estado">
                                             Estado
                                         </label>
-                                        <input type="text" name="estado" id="estado" class="form-control-sm" placeholder="Estado ex: Goiais">
+                                        <input type="text" name="estado_moradia" id="estado_moradia" class="form-control-sm" placeholder="Estado ex: Goiais">
                                     </div>
                                 </div>
                                 <div class="field">
                                     <label for="referencia">
                                         Referencia da Localidade
                                     </label>
-                                    <input type="text" name="referencia" id="referencia" class="form-control-sm" placeholder="Referencia de sua localidade">
+                                    <input type="text" name="referencia_moradia" id="referencia_moradia" class="form-control-sm" placeholder="Referencia de sua localidade">
                                 </div>
                                 <!-- btn salvar e atualizar -->
                                 <div class="blue ui buttons shadow-lg">
@@ -289,7 +291,9 @@
     <script src="../node_modules/angular-material/angular-material.min.js"></script>
     <script src="../js/js/configuracoes.js"></script>
     <script src="../js/js/logica_alter_username.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="../Semantic-UI-CSS-master/semantic.min.js"></script>
     <script src="../js/jQuery/logica_ativar_conta.js"></script>
+    <script src="../js/js/painelEmpresarialModuler.js" type="module"></script>
+
 </body>
 </html>
