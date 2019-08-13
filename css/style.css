@@ -17,3 +17,9 @@
     align-items: center;
     flex-wrap: wrap;
 }
+#analise_netWork{
+    display: none;
+}
+div#showErrorNetWork{
+    display: none;
+}

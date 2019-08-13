@@ -1,5 +1,22 @@
 
 <!-- rodaper -->
+<section>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="mapFooter" class="d-flex justify-content-center align-content-center flex-wrap flex-column bg-dark">
+                <div class="ui card shadow-lg">
+                    <div class="content">
+                        <div class="ui center aligned header">Mercado.bay</div>
+                        <div class="ui center aligned description">Plataforma de comercio online</div>
+                    </div>
+                    <div class="extra content">
+                        Itinga - Ma  Brasil <i class="flag br"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="ui container-fluid">
         <div class="row">
             <div class="col-md-8 footer-side-left d-flex justify-content-center align-content-center flex-wrap">

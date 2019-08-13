@@ -1,7 +1,7 @@
 
 <!-- =========================  -->
 <div class="ui container-fluid bg-primary d-flex justify-content-center align-content-center flex-column box_search">
-    
+            
             <div class="d-flex justify-content-center align-content-center flex-column text-center">
             <!-- <img src="./img/logo_oficial/logo-super.market.png" height="45em" alt="logo oficial mercado facil"> -->
                 <div class="mb-5 d-flex justify-content-center align-content-center flex-column flex-wrap">
