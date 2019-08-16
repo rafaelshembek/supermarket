@@ -83,18 +83,6 @@
         </div>
     </div>
 </div>
-<hr>
-<div class="col-md-12">
-    <div class="card shadow border-0">
-        <div class="card-body text-center">
-            <div class="h3 font-weight-light">Totais de vendas mensais</div>
-        </div>
-        <div class="card-body">
-            <canvas id="chartResult" height="300"></canvas>
-        </div>
-    </div>
-</div>
-<hr>
 <div class="row">
 
 <div class="col-md-12">
@@ -391,9 +379,8 @@
 
 </div>
 </section>
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../Semantic-UI-CSS-master/semantic.min.js"></script>
-    <script src="../node_modules/angular/angular.min.js"></script>
-    <!-- <script src="../node_modules/"></script> -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../Semantic-UI-CSS-master/semantic.min.js"></script>
+<script src="../node_modules/angular/angular.min.js"></script>
 </body>
 </html>
