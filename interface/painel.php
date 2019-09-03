@@ -356,6 +356,14 @@
         </div>
     </div>
 </div>
+<!-- Chart Reloatorio -->
+<section class="ui container-fluid">
+    <div class="card">
+        <div class="card-body">
+            <canvas id="chartRelatorio" height="100"></canvas>
+        </div>
+    </div>
+</section>
 <?php endif; ?>
 <!-- FOOTER -->
     <footer>
@@ -382,5 +390,7 @@
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../Semantic-UI-CSS-master/semantic.min.js"></script>
 <script src="../node_modules/angular/angular.min.js"></script>
+<script src="../node_modules/chart.js/dist/chart.min.js"></script>
+<script src="../js/js/ChartRelatorio.js"></script>
 </body>
 </html>

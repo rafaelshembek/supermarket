@@ -1,3 +1,6 @@
+#menumain{
+    /* background: linear-gradient(96.3deg, #f7d200 40%, #fbcd00 100%); */
+}
 .nav-menu{
     display: flex;
     justify-content: flex-end;

@@ -1,5 +1,8 @@
 <?php
+
+
 namespace Case_menu;
+
 class menu_Top{
     // controla a logica do menu empresa ou usuario
     public function menu($type_conta, $id_loja){
@@ -9,6 +12,10 @@ class menu_Top{
             echo '<div class="ui attached secondary stackable menu border-0" style="background: #fff;">';
             echo '<div class="card-body bg-warning">';
                 echo '<img src="img/logo_oficial/logo-small-top-page-cadastro.png" width="100em" alt="logo marketplace">';
+            echo '</div>';
+            echo '<div class="item d-felx justify-content-center align-content-center flex-wrap">';
+                    echo '<img src="assets/avatar_perfil/padrao.jpg" class="ui avatar image border">';
+                    echo '<span>Usuario</span>';
             echo '</div>';
                 echo '<ul class="right menu">';
                     echo'<div class="item justify-content-center">';
