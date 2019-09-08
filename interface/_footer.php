@@ -79,6 +79,7 @@
 <script src="./Semantic-UI-CSS-master/semantic.min.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./js/js/index.js" type="module"></script>
+<script src="./bundle.js"></script>
 <script src="./js/jQuery/route-nav-inicial.js"></script>
 <script src="./js/js/notifycationBeyUser.js"></script>
 <script src="./js/js/tagsProdutosindex.js"></script>
