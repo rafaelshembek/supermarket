@@ -28,7 +28,7 @@
                         $menu->setId($lojaId);
                         $menu->setType($type);
                  ?>
-                 <div id="menumain" class="ui attached stackable secondary bg-white menu border-0">
+                 <div id="menumain" class="ui attached stackable secondary bg-warning shadow-lg menu border-0">
                 <?php $menu->displayMenu(); ?>
                  </div>
                 <?php require_once('interface/body.php'); ?>

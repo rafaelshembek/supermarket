@@ -59,7 +59,7 @@ if(isset($_SESSION['id_user']) && isset($_GET['cliente']) && isset($_GET['data']
         <div class="card-body d-flex justify-content-center align-content-center">
             <a class="nav-link" href="./list_new_compras.php"><i class="reply icon"></i> voltar</a>
             <a href="#!" onclick="printButton(this)" class="ui button shadow-sm border" title="Imprimir lista da Compra" style="background: #fff;"><i class="print icon"></i></a>
-            <a href="#!" class="ui button shadow-sm border" id="btnConfir" title="Informa o envior da compra" style="background: #fff;"><i class="shipping fast icon"></i>Informe o envior dos produto ao cliente</a>
+            <!-- <a href="#!" class="ui button shadow-sm border" id="btnConfir" title="Informa o envior da compra" style="background: #fff;"><i class="shipping fast icon"></i>Informe o envior dos produto ao cliente</a> -->
         </div>
     </nav>
     <!-- ====================================== -->
@@ -126,7 +126,6 @@ if(isset($_SESSION['id_user']) && isset($_GET['cliente']) && isset($_GET['data']
                                     }
                                 ?>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -209,7 +208,11 @@ if(isset($_SESSION['id_user']) && isset($_GET['cliente']) && isset($_GET['data']
 
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/angular/angular.min.js"></script>
-<script src="../js/js/realatorio_compras.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<!-- <script src="../node_modules/socket.io-client/dist/socket.io.js"></script> -->
+<script src="../lib/relatorio_compras.js"></script>
+<script src="../bundle.js"></script>
+
+
 </body>
 </html>

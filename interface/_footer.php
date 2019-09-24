@@ -74,6 +74,7 @@
 
 <!-- jquerys & Javascript -->
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<!-- <script src="./node_modules/socket.io-client/dist/socket.io.js"></script> -->
 <script src="./node_modules/angular/angular.min.js"></script>
 <script src="./node_modules/angular-route/angular-route.js"></script>
 <script src="./Semantic-UI-CSS-master/semantic.min.js"></script>
@@ -83,6 +84,6 @@
 <script src="./js/jQuery/route-nav-inicial.js"></script>
 <script src="./js/js/notifycationBeyUser.js"></script>
 <script src="./js/js/tagsProdutosindex.js"></script>
-
+<!-- <script src="./scripts/client.js"></script> -->
 </body>
 </html>

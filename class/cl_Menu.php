@@ -31,9 +31,6 @@ class Menu{
         <div class="card-body">
             <img src="./img/logo_oficial/logo-super.market.png" height="30em" alt="mercado.bay">
         </div>
-        <div class="ui label text-muted justify-content-center align-contentcenter">
-            <h1 id="horanow">0 : 0 : 0</h1>
-        </div>
     <div class="right stackable attached secondary menu border-0 manu_top">
             <a class="item nav-link justify-content-center font-weight-bold" href="interface/signup">cadastre-se</a>
             <a class="item nav-link justify-content-center font-weight-bold" href="interface/esqueceu_senha"><strong>esqueceu a senha?</strong></a>

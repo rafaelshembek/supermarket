@@ -37,16 +37,15 @@
     font-family: 'Roboto', sans-serif;
 }
 .box_search{
-    background-image: url('../img/logo_oficial/pexels-photo-811108.jpeg'),linear-gradient(93.6deg, #03648b, #7a07e6);
-    /* background: linear-gradient(93.6deg, #03648b, #7a07e6);
+    background: linear-gradient(93.6deg, #03648b, #7a07e6); 
     background: -webkit-linear-gradient(93.6deg, #03648b, #7a07e6);
     background: -moz-linear-gradient(93.6deg, #03648b, #7a07e6);
-    background: -o-linear-gradient(93.6deg, #03648b, #7a07e6); */
+    background: -o-linear-gradient(93.6deg, #03648b, #7a07e6);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    height: 655px;
+    /* height: 655px; */
 }
 
 #search{

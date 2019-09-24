@@ -113,11 +113,16 @@ require_once('../class/Cl_config.php');
 </section>
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="../node_modules/socket.io-client/dist/socket.io.js"></script> -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/angular/angular.min.js"></script>
     <script src="../node_modules/angular-route/angular-route.min.js"></script>
     <script src="../js/js/painel_usuario.js"></script>
     <script src="../js/js/avatarpainelusuario.js"></script>
     <script src="../js/js/painelUsusarioModuler.js" type="module"></script>
+    <script src="../bundle.js"></script>
+    <!-- <script src="../scripts/client.js"></script> -->
+
+
 </body>
 </html>
