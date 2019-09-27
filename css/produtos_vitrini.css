@@ -54,6 +54,31 @@
 }
 /* BTNS SHOW MENU TAGS PRODUTOS */
 #btnbars{
-    background: #4AC767;
-    width: 100%;
+    background: #17bb2d;
+    
+}
+
+@media screen and ( device-width: 375px ){
+    .card_produtos{
+        width: 150px;
+    }
+    .preco{
+        margin-top: -10em;
+        margin-left: 7em;
+    }
+    .descriptionsProduct{
+        font-size: 8pt;
+    }
+}
+@media screen and ( device-width: 360px ){
+    .card_produtos{
+        width: 150px;
+    }
+    .preco{
+        margin-top: -10em;
+        margin-left: 7em;
+    }
+    .descriptionsProduct{
+        font-size: 8pt;
+    }
 }

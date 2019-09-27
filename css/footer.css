@@ -1,8 +1,11 @@
 .footer-side-left{
-    background: #1b1b17;
+    background: #0685b8;
 }
 .footer-site-right{
     background: #ffffff;
+}
+#footer-buttom{
+    background: #03648b;
 }
 #mapFooter{
     background-image: url('../img/logo_oficial/map.jpg');

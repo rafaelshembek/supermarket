@@ -49,16 +49,13 @@
 }
 
 #search{
-    background: #0fb676;
-    color: #ffffff;
+    background: #f0f0f0;
     border: none;
     font-family: 'Roboto', sans-serif;
 }
-.bg-backgrounds{
-    background: #0fb676;
-}
 #search::-webkit-input-placeholder{
-    color: #ffffff;
+    text-align: center;
+    color: #333;
 }
 ::-webkit-input-placeholder{
     color: #0fb676;
@@ -116,33 +113,6 @@ div.box_divs_body{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-}
-/* pagina barra_information.php */
-.info_icon{
-    background: #eee781;
-    color: #93b110;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 50px;
-    height:50px;
-    border-radius: 100%;
-}
-.divs_icons{
-    position: relative;
-    margin-top: -2em;
-    background: rgb(4, 245, 153);
-    height: 100px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    border-radius: 100%;
-}
-#divs{
-    padding: 12px;
 }
 .el{
   background:  #1db110;

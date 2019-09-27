@@ -38,23 +38,13 @@
                 </div>
             </div>
             <div class="col-md-4 footer-site-right d-flex justify-content-center align-content-center flex-column flex-wrap">
-                <div class="card-body d-flex justify-content-center align-content-center flex-column">
-                    <p class="ui small green label font-weight-bold">Plataforma com foco em apoio aos setores varejos e atacados.</p>
-                </div>
-                <div class="card-body text-center d-flex justify-content-center align-content-center flex-column flex-wrap">
-                    <div class="h2 text-center text-muted">Vai vender!</div>
-                    <p class="text-center text-muted">Teste nossa plataforma por <strong class="ui yellow label">30 dias</strong></p>
-                    <a class="ui green button" href="interface/signup.php"><i class="sign-in icon"></i> Cadastre-se</a>
-                </div>
-                <div class="card-body text-center m-0 d-flex justify-content-center align-content-center flex-column">
-                    <!-- Endereço plataforma -->
-                    <p class="font-weight-light text-center text-muted m-1">Escritorio de Desenvolvimento</p>
-                    <p class="font-weight-bold text-center text-muted">Itinga - Ma <i class="br flag"></i></p>           
+                <div class="card-body d-flex justify-content-center align-content-center flex-column flex-wrap">
+                    <div class="h1 font-weight-light text-center text-muted">A melhor experiência que seus clientes procura.</div>
                 </div>
             </div>
         </div>
 </footer>
-<div class="row" style="background: #000;">
+<div class="row" id="footer-buttom">
     <div class="col-md-9">
         <div class="card-body">
                         <div class="title text-white">&copy 2019 all rights reserved Todo os direitos reservados</div>
@@ -63,11 +53,9 @@
     </div>
     <div class="col-md-3 d-flex justify-content-center align-content-center">
         <div class="card-body d-flex justify-content-center align-content-center flex-wrap">
-            <a class="ui facebook icon circular button" href="#!">
-                <i class="facebook icon"></i></a>
+            <a class="ui button" href="#!">facebook</a>
 
-            <a href="#!" class="ui instagram icon circular button">
-            <i class="instagram icon"></i></a>
+            <a href="#!" class="ui button">instagram</a>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <!-- style css dessa pagina esta na body.css -->
-<ul class="ui container" id="infoFloat">
-    <div class="d-flex justify-content-center align-content-center flex-column text-center p-4">
+<ul class="ui container-fluid">
+    <div class="card-body d-flex justify-content-center align-content-center flex-column text-center p-4">
     <!-- <img src="./img/logo_oficial/logo-super.market.png" height="45em" alt="logo oficial mercado facil"> -->
         <div class="mb-3 d-flex justify-content-center align-content-center flex-column flex-wrap">
             <div class="justify-content-center">
@@ -29,37 +29,37 @@
         <div class="h1 font-weight-bold text-center text-white">Veja como é simples compra!</div>
     </div>
     <div class="card-deck" id="divs">
-        <div class="card bg-backgrounds border-0 shadow-lg">
+        <div class="card bg-backgrounds border-0 divsInfor">
             <div class="card-body">
-                <div class="card-body d-flex justify-content-center align-content-center">
-                    <div class="h1 text-white shadow divs_icons"><i class="fas fa-search-location"></i></div>
+                <div class="d-flex justify-content-center align-content-center">
+                    <div class="h1 text-muted divs_icons"><i class="fas fa-search-location"></i></div>
                 </div>
-                <div class="ui header text-white text-center">Escolhar seu supermercado favorito</div>
+                <div class="ui header text-muted text-center">Escolhar seu supermercado favorito</div>
             </div>            
         </div>
-        <div class="card bg-backgrounds border-0 shadow-lg">
+        <div class="card bg-backgrounds border-0 divsInfor">
             <div class="card-body">
-                <div class="card-body d-flex justify-content-center align-content-center">
-                    <div class="h1 text-white shadow divs_icons"><i class="fas fa-shopping-basket"></i></div>
+                <div class="d-flex justify-content-center align-content-center">
+                    <div class="h1 text-muted divs_icons"><i class="fas fa-shopping-basket"></i></div>
                 </div>
-                <div class="ui header text-white text-center">Escolhar seus produtos</div>
+                <div class="ui header text-muted text-center">Escolhar seus produtos</div>
             </div>            
         </div>
-        <div class="card bg-backgrounds border-0 shadow-lg">
+        <div class="card bg-backgrounds border-0 divsInfor">
             <div class="card-body">
-                <div class="card-body d-flex justify-content-center align-content-center">
-                    <div class="h1 text-white shadow divs_icons"><i class="fas fa-truck-moving"></i></div>
+                <div class="d-flex justify-content-center align-content-center">
+                    <div class="h1 text-muted divs_icons"><i class="fas fa-truck-moving"></i></div>
                 </div>
-                <div class="ui header text-white text-center">Receba em sua casa</div>
+                <div class="ui header text-muted text-center">Receba em sua casa</div>
             </div>            
         </div>
-        <div class="card bg-backgrounds border-0 shadow-lg">
+        <div class="card bg-backgrounds border-0 divsInfor">
             <div class="card-body">
-                <div class="card-body d-flex justify-content-center align-content-center">
-                    <div class="h1 text-white shadow divs_icons"><i class="fas fa-hand-holding-usd"></i></div>
+                <div class="d-flex justify-content-center align-content-center">
+                    <div class="h1 text-muted divs_icons"><i class="fas fa-hand-holding-usd"></i></div>
                 </div>
-                <div class="ui header text-white text-center">Paga quando receber</div>
-                <div class="description text-center text-white"><strong><i class="fas fa-credit-card"></i> Cartão</strong> ou <strong>Dinheiro <i class="fas fa-dollar-sign"></i></strong></div>
+                <div class="ui header text-muted text-center">Paga quando receber</div>
+                <div class="description text-center text-muted"><strong><i class="fas fa-credit-card"></i> Cartão</strong> ou <strong>Dinheiro <i class="fas fa-dollar-sign"></i></strong></div>
             </div>            
         </div>
     </div>

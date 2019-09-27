@@ -6,11 +6,11 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
 // buscar todas as categorias
 
 ?>
-<section class="ui container-fluid">
+<section class="ui container-fluid bg-success">
 <div class="row">
-        <div id="btnbars" class="ui attached secondary stackabled menu border-0">
+        <div id="btnbars" class="ui attached secondary stackabled menu border-0 shadow-lg">
             <div class="item m-2">
-                <button class="ui circular green icon button"><i class="bars icon"></i></button>
+                <button class="ui circular icon button" style="background: #fff !important;"><i class="bars icon"></i></button>
             </div>
             <div class="h2 item font-weight-bold text-white">Categorias</div>
         </div>
@@ -25,15 +25,15 @@ $resultDow = $select_produto_aleatorio->exe_query("SELECT * FROM produto JOIN ca
                 <?php
                     foreach($resultDow as $key => $column){
                     
-                        echo '<div class="card_produtos shadow-lg align-self-center m-1 bg-white" data-tags="'.$column['categoria'].'">';
+                        echo '<div class="card_produtos text-center align-self-start m-1 bg-white" data-tags="'.$column['categoria'].'">';
                             echo '<div class="card-body text-center">';
                                 echo '<p class="font-weight-bold text-muted">'.utf8_decode($column["produto"]).'</p>';
                             echo '</div>';
-                                echo '<div class="text-center">';
+                                echo '<div class="text-center ui tiny image">';
                                     echo '<img src="./img/produtos/'.$column["img_produto"].'" height="100">';
                                 echo '</div>';
                             echo '<div class="card-body text-center">';
-                                echo '<div class="font-weight-light text-center text-muted">'.utf8_decode($column["descricao"]).'</div>';
+                                echo '<div class="font-weight-light text-center text-muted descriptionsProduct">'.utf8_decode($column["descricao"]).'</div>';
                             echo '</div>';
                             echo '<div class="preco">';
                                 echo '<span class="font-weight-bold cifrao shadow">R$</span>';

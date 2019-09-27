@@ -32,8 +32,8 @@ class Menu{
             <img src="./img/logo_oficial/logo-super.market.png" height="30em" alt="mercado.bay">
         </div>
     <div class="right stackable attached secondary menu border-0 manu_top">
-            <a class="item nav-link justify-content-center font-weight-bold" href="interface/signup">cadastre-se</a>
-            <a class="item nav-link justify-content-center font-weight-bold" href="interface/esqueceu_senha"><strong>esqueceu a senha?</strong></a>
+            <a class="item ui button text-white" style="background: green;" href="interface/signup"><strong>cadastre-se <i class="fas fa-sign-in-alt"></i></strong></a>
+            <a class="item ui button text-muted" style="background: #fafafa;" href="interface/esqueceu_senha"><strong>esqueceu a senha <i class="fas fa-question"></i></strong></a>
     </div>';
     }
 
