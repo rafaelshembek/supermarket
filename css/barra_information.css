@@ -22,11 +22,12 @@
     flex-wrap: wrap;
     border-radius: 100%;
 }
+.results
+{
+    padding: 2em;
+}
 #divs{
     padding: 12px;
-}
-.bg-backgrounds{
-    /* background: #0fb676; */
 }
 @media screen and ( device-width: 360px ){
     .divs_icons{

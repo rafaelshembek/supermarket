@@ -19,7 +19,7 @@ class gestor_DB{
         $this->basedado = "marketplace";
         $this->host = "localhost";
         $this->user = "rafael";
-        $this->pass = "159357";
+        $this->pass = "rafael159357";
     }
 
      

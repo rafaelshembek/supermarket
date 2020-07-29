@@ -15,14 +15,14 @@
 <?php
 session_start();
 
-$basedado = 'epiz_23571897_mercadobay';
-$host = 'sql304.epizy.com';
-$user = 'epiz_23571897';
-$pass = 'taJrHyI5';
-// $basedado = 'marketplace';
-// $host = 'localhost';
-// $user = 'rafael';
-// $pass = '159357';
+// $basedado = 'epiz_23571897_mercadobay';
+// $host = 'sql304.epizy.com';
+// $user = 'epiz_23571897';
+// $pass = 'taJrHyI5';
+$basedado = 'marketplace';
+$host = 'localhost';
+$user = 'rafael';
+$pass = 'rafael159357';
 
 $connection  = new PDO("mysql:dbname=$basedado;host=$host", $user, $pass);
 
