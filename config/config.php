@@ -18,6 +18,6 @@
     $baseDado = "epiz_20752972_agency";
     $host = "sql309.epizy.com";
     $user = "epiz_20752972";
-    $pass = "b1OR9LU1pI";
+    $pass = "**********";
     */
 ?>
