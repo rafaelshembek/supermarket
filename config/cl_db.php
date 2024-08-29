@@ -4,7 +4,7 @@ class BD{
     private $bd_name = "marketplace";
     private $host = 'localhost';
     private $user = 'rafael';
-    private $pass = '159357';
+    private $pass = '*******';
 
     public function conexao_db(){
         $ligacao = new PDO("mysql:dbname={$this->getDBname()};host={$this->getHost()}", $this->getUser(), $this->getPass());
