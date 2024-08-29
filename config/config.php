@@ -4,7 +4,7 @@
     $baseDado = "marketplace";
     $host = "localhost";
     $user = "rafael";
-    $pass = "159357";
+    $pass = "*********";
     /*
     */
     /*
