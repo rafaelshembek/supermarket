@@ -11,7 +11,7 @@
     $configuracao = array(  'BASEDADO' => 'comment',
                             'LOCALHOST' => 'localhost',
                             'USER' => 'rafael',
-                            'PASS' => '159');
+                            'PASS' => '******');
     */
     /*
     //DADOS DE CONEXÃO COM O BANCO DE DADO ONLINE DA HOSPEDAGEM
